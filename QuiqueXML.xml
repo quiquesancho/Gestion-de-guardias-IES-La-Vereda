@@ -1,0 +1,348 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<centro codigo="46022543" denominacion="IES LA VEREDA" curso="2020" fechaExportacion="23/04/2021 16:05:21" version="1.0">  
+  <docentes>    
+    <docente nombre="Orli" apellido1="Blevins" apellido2="Pena" documento="60543413D" correo="non@eueuismod.net" />
+    <docente nombre="Ciara" apellido1="Velez" apellido2="Hardy" documento="82405120G" correo="ullamcorper@interdumlibero.edu" />
+    <docente nombre="Charity" apellido1="Thompson" apellido2="Vang" documento="57831832X" correo="eu@dictumeu.com" />
+    <docente nombre="Denise" apellido1="Dale" apellido2="Meyers" documento="81932825N" correo="at.lacus@adipiscing.ca" />
+    <docente nombre="Lavinia" apellido1="Quinn" apellido2="Middleton" documento="61144366L" correo="auctor.vitae@sitamet.net" />
+    <docente nombre="Anthony" apellido1="Schneider" apellido2="Terrell" documento="37541261L" correo="leo@temporarcu.org" />
+    <docente nombre="Maxine" apellido1="Calhoun" apellido2="Gray" documento="66373099U" correo="nec.cursus.a@ante.edu" />
+
+    <docente nombre="Enrique" apellido1="Sancho" apellido2="Caballer" documento="12345678A" correo="prueba@prueba.com" />
+    <docente nombre="Secretaria" apellido1="Secretaria" apellido2="Secretaria" documento="12345678B" correo="secretaria@secretaria.com" />
+    <docente nombre="Admin" apellido1="Admin" apellido2="Admin" documento="12345678C" correo="admin@admin.com" />
+      <!-- Aci van tots els docents del centre / en l'etiqueta <docente> van més atributs però no són relevants-->
+   </docentes>
+   <horarios_ocupaciones>
+    <horario_ocupacion dia_semana="L" hora_desde="8:15" hora_hasta="9:10" ocupacion="3249454" documento="60543413D" />
+    <horario_ocupacion dia_semana="L" hora_desde="9:10" hora_hasta="10:05" ocupacion="3249454" documento="82405120G" />
+    <horario_ocupacion dia_semana="L" hora_desde="10:05" hora_hasta="11:00" ocupacion="3249454" documento="57831832X" />
+    <horario_ocupacion dia_semana="L" hora_desde="11:30" hora_hasta="12:25" ocupacion="3249454" documento="37541261L" />
+    <horario_ocupacion dia_semana="L" hora_desde="12:25" hora_hasta="13:20" ocupacion="3249454" documento="66373099U" />
+    <horario_ocupacion dia_semana="L" hora_desde="13:20" hora_hasta="14:15" ocupacion="3249454" documento="61144366L" />
+    <horario_ocupacion dia_semana="L" hora_desde="14:15" hora_hasta="15:10" ocupacion="3249454" documento="81932825N" />
+
+    <horario_ocupacion dia_semana="M" hora_desde="8:15" hora_hasta="9:10" ocupacion="3249454" documento="60543413D" />
+    <horario_ocupacion dia_semana="M" hora_desde="9:10" hora_hasta="10:05" ocupacion="3249454" documento="57831832X" />
+    <horario_ocupacion dia_semana="M" hora_desde="10:05" hora_hasta="11:00" ocupacion="3249454" documento="82405120G" />
+    <horario_ocupacion dia_semana="M" hora_desde="11:30" hora_hasta="12:25" ocupacion="3249454" documento="61144366L" />
+    <horario_ocupacion dia_semana="M" hora_desde="12:25" hora_hasta="13:20" ocupacion="3249454" documento="81932825N" />
+    <horario_ocupacion dia_semana="M" hora_desde="13:20" hora_hasta="14:15" ocupacion="3249454" documento="66373099U" />
+    <horario_ocupacion dia_semana="M" hora_desde="14:15" hora_hasta="15:10" ocupacion="3249454" documento="37541261L" />
+
+    <horario_ocupacion dia_semana="X" hora_desde="8:15" hora_hasta="9:10" ocupacion="3249454" documento="81932825N" />
+    <horario_ocupacion dia_semana="X" hora_desde="9:10" hora_hasta="10:05" ocupacion="3249454" documento="57831832X" />
+    <horario_ocupacion dia_semana="X" hora_desde="10:05" hora_hasta="11:00" ocupacion="3249454" documento="60543413D" />
+    <horario_ocupacion dia_semana="X" hora_desde="11:30" hora_hasta="12:25" ocupacion="3249454" documento="82405120G" />
+    <horario_ocupacion dia_semana="X" hora_desde="12:25" hora_hasta="13:20" ocupacion="3249454" documento="61144366L" />
+    <horario_ocupacion dia_semana="X" hora_desde="13:20" hora_hasta="14:15" ocupacion="3249454" documento="37541261L" />
+    <horario_ocupacion dia_semana="X" hora_desde="14:15" hora_hasta="15:10" ocupacion="3249454" documento="66373099U" />
+
+    <horario_ocupacion dia_semana="J" hora_desde="8:15" hora_hasta="9:10" ocupacion="3249454" documento="81932825N" />
+    <horario_ocupacion dia_semana="J" hora_desde="9:10" hora_hasta="10:05" ocupacion="3249454" documento="37541261L" />
+    <horario_ocupacion dia_semana="J" hora_desde="10:05" hora_hasta="11:00" ocupacion="3249454" documento="61144366L" />
+    <horario_ocupacion dia_semana="J" hora_desde="11:30" hora_hasta="12:25" ocupacion="3249454" documento="60543413D" />
+    <horario_ocupacion dia_semana="J" hora_desde="12:25" hora_hasta="13:20" ocupacion="3249454" documento="82405120G" />
+    <horario_ocupacion dia_semana="J" hora_desde="13:20" hora_hasta="14:15" ocupacion="3249454" documento="66373099U" />
+    <horario_ocupacion dia_semana="J" hora_desde="14:15" hora_hasta="15:10" ocupacion="3249454" documento="57831832X" />
+
+    <horario_ocupacion dia_semana="V" hora_desde="8:15" hora_hasta="9:10" ocupacion="3249454" documento="61144366L" />
+    <horario_ocupacion dia_semana="V" hora_desde="9:10" hora_hasta="10:05" ocupacion="3249454" documento="66373099U" />
+    <horario_ocupacion dia_semana="V" hora_desde="10:05" hora_hasta="11:00" ocupacion="3249454" documento="37541261L" />
+    <horario_ocupacion dia_semana="V" hora_desde="11:30" hora_hasta="12:25" ocupacion="3249454" documento="57831832X" />
+    <horario_ocupacion dia_semana="V" hora_desde="12:25" hora_hasta="13:20" ocupacion="3249454" documento="81932825N" />
+    <horario_ocupacion dia_semana="V" hora_desde="13:20" hora_hasta="14:15" ocupacion="3249454" documento="60543413D" />
+    <horario_ocupacion dia_semana="V" hora_desde="14:15" hora_hasta="15:10" ocupacion="3249454" documento="82405120G" />
+      <!-- Aci van totes les ocupacions dels docents a les aules del centre / en l'etiqueta <horario_ocupacion> van més atributs però no són relevants-->
+      <!-- La ocupació 3249454 és la de guàrdia -->
+    </horarios_ocupaciones>
+
+  <horarios_grupo>
+  
+      <horario_grupo dia_semana="L" sesion_orden="1" hora_desde="08:15" hora_hasta="09:10" grupo="4ESOB" contenido="VLLLOMCE" docente="66373099U" aula="1.01" idioma="V"/>
+      <horario_grupo dia_semana="L" sesion_orden="1" hora_desde="09:10" hora_hasta="10:05" grupo="1ESOC" contenido="VLLLOMCE" docente="66373099U" aula="0.03" idioma="V"/>
+      <horario_grupo dia_semana="L" sesion_orden="1" hora_desde="10:05" hora_hasta="11:00" grupo="2ESOA" contenido="VLLLOMCE" docente="66373099U" aula="0.04" idioma="V"/>
+      <horario_grupo dia_semana="L" sesion_orden="1" hora_desde="11:30" hora_hasta="12:25" grupo="3ESOB" contenido="VLLLOMCE" docente="66373099U" aula="2.01" idioma="V"/>
+      <horario_grupo dia_semana="L" sesion_orden="1" hora_desde="12:25" hora_hasta="13:20" grupo="4ESOA" contenido="VLLLOMCE" docente="66373099U" aula="1.17" idioma="V"/>
+      <horario_grupo dia_semana="L" sesion_orden="1" hora_desde="13:20" hora_hasta="14:15" grupo="2ESOB" contenido="VLLLOMCE" docente="66373099U" aula="1.06" idioma="V"/>
+      <horario_grupo dia_semana="L" sesion_orden="1" hora_desde="14:15" hora_hasta="15:10" grupo="1ESOB" contenido="VLLLOMCE" docente="66373099U" aula="0.08" idioma="V"/>
+
+      <horario_grupo dia_semana="M" sesion_orden="1" hora_desde="08:15" hora_hasta="09:10" grupo="4ESOB" contenido="VLLLOMCE" docente="66373099U" aula="1.01" idioma="V"/>
+      <horario_grupo dia_semana="M" sesion_orden="1" hora_desde="09:10" hora_hasta="10:05" grupo="1ESOC" contenido="VLLLOMCE" docente="66373099U" aula="0.03" idioma="V"/>
+      <horario_grupo dia_semana="M" sesion_orden="1" hora_desde="10:05" hora_hasta="11:00" grupo="2ESOA" contenido="VLLLOMCE" docente="66373099U" aula="0.04" idioma="V"/>
+      <horario_grupo dia_semana="M" sesion_orden="1" hora_desde="11:30" hora_hasta="12:25" grupo="3ESOB" contenido="VLLLOMCE" docente="66373099U" aula="2.01" idioma="V"/>
+      <horario_grupo dia_semana="M" sesion_orden="1" hora_desde="12:25" hora_hasta="13:20" grupo="4ESOA" contenido="VLLLOMCE" docente="66373099U" aula="1.17" idioma="V"/>
+      <horario_grupo dia_semana="M" sesion_orden="1" hora_desde="13:20" hora_hasta="14:15" grupo="2ESOB" contenido="VLLLOMCE" docente="66373099U" aula="1.06" idioma="V"/>
+      <horario_grupo dia_semana="M" sesion_orden="1" hora_desde="14:15" hora_hasta="15:10" grupo="1ESOB" contenido="VLLLOMCE" docente="66373099U" aula="0.08" idioma="V"/>
+
+      <horario_grupo dia_semana="X" sesion_orden="1" hora_desde="08:15" hora_hasta="09:10" grupo="4ESOB" contenido="VLLLOMCE" docente="66373099U" aula="1.01" idioma="V"/>
+      <horario_grupo dia_semana="X" sesion_orden="1" hora_desde="09:10" hora_hasta="10:05" grupo="1ESOC" contenido="VLLLOMCE" docente="66373099U" aula="0.03" idioma="V"/>
+      <horario_grupo dia_semana="X" sesion_orden="1" hora_desde="10:05" hora_hasta="11:00" grupo="2ESOA" contenido="VLLLOMCE" docente="66373099U" aula="0.04" idioma="V"/>
+      <horario_grupo dia_semana="X" sesion_orden="1" hora_desde="11:30" hora_hasta="12:25" grupo="3ESOB" contenido="VLLLOMCE" docente="66373099U" aula="2.01" idioma="V"/>
+      <horario_grupo dia_semana="X" sesion_orden="1" hora_desde="12:25" hora_hasta="13:20" grupo="4ESOA" contenido="VLLLOMCE" docente="66373099U" aula="1.17" idioma="V"/>
+      <horario_grupo dia_semana="X" sesion_orden="1" hora_desde="13:20" hora_hasta="14:15" grupo="2ESOB" contenido="VLLLOMCE" docente="66373099U" aula="1.06" idioma="V"/>
+      <horario_grupo dia_semana="X" sesion_orden="1" hora_desde="14:15" hora_hasta="15:10" grupo="1ESOB" contenido="VLLLOMCE" docente="66373099U" aula="0.08" idioma="V"/>
+
+      <horario_grupo dia_semana="J" sesion_orden="1" hora_desde="08:15" hora_hasta="09:10" grupo="4ESOB" contenido="VLLLOMCE" docente="66373099U" aula="1.01" idioma="V"/>
+      <horario_grupo dia_semana="J" sesion_orden="1" hora_desde="09:10" hora_hasta="10:05" grupo="1ESOC" contenido="VLLLOMCE" docente="66373099U" aula="0.03" idioma="V"/>
+      <horario_grupo dia_semana="J" sesion_orden="1" hora_desde="10:05" hora_hasta="11:00" grupo="2ESOA" contenido="VLLLOMCE" docente="66373099U" aula="0.04" idioma="V"/>
+      <horario_grupo dia_semana="J" sesion_orden="1" hora_desde="11:30" hora_hasta="12:25" grupo="3ESOB" contenido="VLLLOMCE" docente="66373099U" aula="2.01" idioma="V"/>
+      <horario_grupo dia_semana="J" sesion_orden="1" hora_desde="12:25" hora_hasta="13:20" grupo="4ESOA" contenido="VLLLOMCE" docente="66373099U" aula="1.17" idioma="V"/>
+      <horario_grupo dia_semana="J" sesion_orden="1" hora_desde="13:20" hora_hasta="14:15" grupo="2ESOB" contenido="VLLLOMCE" docente="66373099U" aula="1.06" idioma="V"/>
+      <horario_grupo dia_semana="J" sesion_orden="1" hora_desde="14:15" hora_hasta="15:10" grupo="1ESOB" contenido="VLLLOMCE" docente="66373099U" aula="0.08" idioma="V"/>
+
+      <horario_grupo dia_semana="V" sesion_orden="1" hora_desde="08:15" hora_hasta="09:10" grupo="4ESOB" contenido="VLLLOMCE" docente="66373099U" aula="1.01" idioma="V"/>
+      <horario_grupo dia_semana="V" sesion_orden="1" hora_desde="09:10" hora_hasta="10:05" grupo="1ESOC" contenido="VLLLOMCE" docente="66373099U" aula="0.03" idioma="V"/>
+      <horario_grupo dia_semana="V" sesion_orden="1" hora_desde="10:05" hora_hasta="11:00" grupo="2ESOA" contenido="VLLLOMCE" docente="66373099U" aula="0.04" idioma="V"/>
+      <horario_grupo dia_semana="V" sesion_orden="1" hora_desde="11:30" hora_hasta="12:25" grupo="3ESOB" contenido="VLLLOMCE" docente="66373099U" aula="2.01" idioma="V"/>
+      <horario_grupo dia_semana="V" sesion_orden="1" hora_desde="12:25" hora_hasta="13:20" grupo="4ESOA" contenido="VLLLOMCE" docente="66373099U" aula="1.17" idioma="V"/>
+      <horario_grupo dia_semana="V" sesion_orden="1" hora_desde="13:20" hora_hasta="14:15" grupo="2ESOB" contenido="VLLLOMCE" docente="66373099U" aula="1.06" idioma="V"/>
+      <horario_grupo dia_semana="V" sesion_orden="1" hora_desde="14:15" hora_hasta="15:10" grupo="1ESOB" contenido="VLLLOMCE" docente="66373099U" aula="0.08" idioma="V"/>
+    
+  
+      <horario_grupo dia_semana="L" sesion_orden="1" hora_desde="08:15" hora_hasta="09:10" grupo="4ESOB" contenido="VLLLOMCE" docente="37541261L" aula="1.01" idioma="V"/>
+      <horario_grupo dia_semana="L" sesion_orden="1" hora_desde="09:10" hora_hasta="10:05" grupo="1ESOC" contenido="VLLLOMCE" docente="37541261L" aula="0.03" idioma="V"/>
+      <horario_grupo dia_semana="L" sesion_orden="1" hora_desde="10:05" hora_hasta="11:00" grupo="2ESOA" contenido="VLLLOMCE" docente="37541261L" aula="0.04" idioma="V"/>
+      <horario_grupo dia_semana="L" sesion_orden="1" hora_desde="11:30" hora_hasta="12:25" grupo="3ESOB" contenido="VLLLOMCE" docente="37541261L" aula="2.01" idioma="V"/>
+      <horario_grupo dia_semana="L" sesion_orden="1" hora_desde="12:25" hora_hasta="13:20" grupo="4ESOA" contenido="VLLLOMCE" docente="37541261L" aula="1.17" idioma="V"/>
+      <horario_grupo dia_semana="L" sesion_orden="1" hora_desde="13:20" hora_hasta="14:15" grupo="2ESOB" contenido="VLLLOMCE" docente="37541261L" aula="1.06" idioma="V"/>
+      <horario_grupo dia_semana="L" sesion_orden="1" hora_desde="14:15" hora_hasta="15:10" grupo="1ESOB" contenido="VLLLOMCE" docente="37541261L" aula="0.08" idioma="V"/>
+
+      <horario_grupo dia_semana="M" sesion_orden="1" hora_desde="08:15" hora_hasta="09:10" grupo="4ESOB" contenido="VLLLOMCE" docente="37541261L" aula="1.01" idioma="V"/>
+      <horario_grupo dia_semana="M" sesion_orden="1" hora_desde="09:10" hora_hasta="10:05" grupo="1ESOC" contenido="VLLLOMCE" docente="37541261L" aula="0.03" idioma="V"/>
+      <horario_grupo dia_semana="M" sesion_orden="1" hora_desde="10:05" hora_hasta="11:00" grupo="2ESOA" contenido="VLLLOMCE" docente="37541261L" aula="0.04" idioma="V"/>
+      <horario_grupo dia_semana="M" sesion_orden="1" hora_desde="11:30" hora_hasta="12:25" grupo="3ESOB" contenido="VLLLOMCE" docente="37541261L" aula="2.01" idioma="V"/>
+      <horario_grupo dia_semana="M" sesion_orden="1" hora_desde="12:25" hora_hasta="13:20" grupo="4ESOA" contenido="VLLLOMCE" docente="37541261L" aula="1.17" idioma="V"/>
+      <horario_grupo dia_semana="M" sesion_orden="1" hora_desde="13:20" hora_hasta="14:15" grupo="2ESOB" contenido="VLLLOMCE" docente="37541261L" aula="1.06" idioma="V"/>
+      <horario_grupo dia_semana="M" sesion_orden="1" hora_desde="14:15" hora_hasta="15:10" grupo="1ESOB" contenido="VLLLOMCE" docente="37541261L" aula="0.08" idioma="V"/>
+
+      <horario_grupo dia_semana="X" sesion_orden="1" hora_desde="08:15" hora_hasta="09:10" grupo="4ESOB" contenido="VLLLOMCE" docente="37541261L" aula="1.01" idioma="V"/>
+      <horario_grupo dia_semana="X" sesion_orden="1" hora_desde="09:10" hora_hasta="10:05" grupo="1ESOC" contenido="VLLLOMCE" docente="37541261L" aula="0.03" idioma="V"/>
+      <horario_grupo dia_semana="X" sesion_orden="1" hora_desde="10:05" hora_hasta="11:00" grupo="2ESOA" contenido="VLLLOMCE" docente="37541261L" aula="0.04" idioma="V"/>
+      <horario_grupo dia_semana="X" sesion_orden="1" hora_desde="11:30" hora_hasta="12:25" grupo="3ESOB" contenido="VLLLOMCE" docente="37541261L" aula="2.01" idioma="V"/>
+      <horario_grupo dia_semana="X" sesion_orden="1" hora_desde="12:25" hora_hasta="13:20" grupo="4ESOA" contenido="VLLLOMCE" docente="37541261L" aula="1.17" idioma="V"/>
+      <horario_grupo dia_semana="X" sesion_orden="1" hora_desde="13:20" hora_hasta="14:15" grupo="2ESOB" contenido="VLLLOMCE" docente="37541261L" aula="1.06" idioma="V"/>
+      <horario_grupo dia_semana="X" sesion_orden="1" hora_desde="14:15" hora_hasta="15:10" grupo="1ESOB" contenido="VLLLOMCE" docente="37541261L" aula="0.08" idioma="V"/>
+
+      <horario_grupo dia_semana="J" sesion_orden="1" hora_desde="08:15" hora_hasta="09:10" grupo="4ESOB" contenido="VLLLOMCE" docente="37541261L" aula="1.01" idioma="V"/>
+      <horario_grupo dia_semana="J" sesion_orden="1" hora_desde="09:10" hora_hasta="10:05" grupo="1ESOC" contenido="VLLLOMCE" docente="37541261L" aula="0.03" idioma="V"/>
+      <horario_grupo dia_semana="J" sesion_orden="1" hora_desde="10:05" hora_hasta="11:00" grupo="2ESOA" contenido="VLLLOMCE" docente="37541261L" aula="0.04" idioma="V"/>
+      <horario_grupo dia_semana="J" sesion_orden="1" hora_desde="11:30" hora_hasta="12:25" grupo="3ESOB" contenido="VLLLOMCE" docente="37541261L" aula="2.01" idioma="V"/>
+      <horario_grupo dia_semana="J" sesion_orden="1" hora_desde="12:25" hora_hasta="13:20" grupo="4ESOA" contenido="VLLLOMCE" docente="37541261L" aula="1.17" idioma="V"/>
+      <horario_grupo dia_semana="J" sesion_orden="1" hora_desde="13:20" hora_hasta="14:15" grupo="2ESOB" contenido="VLLLOMCE" docente="37541261L" aula="1.06" idioma="V"/>
+      <horario_grupo dia_semana="J" sesion_orden="1" hora_desde="14:15" hora_hasta="15:10" grupo="1ESOB" contenido="VLLLOMCE" docente="37541261L" aula="0.08" idioma="V"/>
+
+      <horario_grupo dia_semana="V" sesion_orden="1" hora_desde="08:15" hora_hasta="09:10" grupo="4ESOB" contenido="VLLLOMCE" docente="37541261L" aula="1.01" idioma="V"/>
+      <horario_grupo dia_semana="V" sesion_orden="1" hora_desde="09:10" hora_hasta="10:05" grupo="1ESOC" contenido="VLLLOMCE" docente="37541261L" aula="0.03" idioma="V"/>
+      <horario_grupo dia_semana="V" sesion_orden="1" hora_desde="10:05" hora_hasta="11:00" grupo="2ESOA" contenido="VLLLOMCE" docente="37541261L" aula="0.04" idioma="V"/>
+      <horario_grupo dia_semana="V" sesion_orden="1" hora_desde="11:30" hora_hasta="12:25" grupo="3ESOB" contenido="VLLLOMCE" docente="37541261L" aula="2.01" idioma="V"/>
+      <horario_grupo dia_semana="V" sesion_orden="1" hora_desde="12:25" hora_hasta="13:20" grupo="4ESOA" contenido="VLLLOMCE" docente="37541261L" aula="1.17" idioma="V"/>
+      <horario_grupo dia_semana="V" sesion_orden="1" hora_desde="13:20" hora_hasta="14:15" grupo="2ESOB" contenido="VLLLOMCE" docente="37541261L" aula="1.06" idioma="V"/>
+      <horario_grupo dia_semana="V" sesion_orden="1" hora_desde="14:15" hora_hasta="15:10" grupo="1ESOB" contenido="VLLLOMCE" docente="37541261L" aula="0.08" idioma="V"/>
+    
+  
+      <horario_grupo dia_semana="L" sesion_orden="1" hora_desde="08:15" hora_hasta="09:10" grupo="4ESOB" contenido="VLLLOMCE" docente="61144366L" aula="1.01" idioma="V"/>
+      <horario_grupo dia_semana="L" sesion_orden="1" hora_desde="09:10" hora_hasta="10:05" grupo="1ESOC" contenido="VLLLOMCE" docente="61144366L" aula="0.03" idioma="V"/>
+      <horario_grupo dia_semana="L" sesion_orden="1" hora_desde="10:05" hora_hasta="11:00" grupo="2ESOA" contenido="VLLLOMCE" docente="61144366L" aula="0.04" idioma="V"/>
+      <horario_grupo dia_semana="L" sesion_orden="1" hora_desde="11:30" hora_hasta="12:25" grupo="3ESOB" contenido="VLLLOMCE" docente="61144366L" aula="2.01" idioma="V"/>
+      <horario_grupo dia_semana="L" sesion_orden="1" hora_desde="12:25" hora_hasta="13:20" grupo="4ESOA" contenido="VLLLOMCE" docente="61144366L" aula="1.17" idioma="V"/>
+      <horario_grupo dia_semana="L" sesion_orden="1" hora_desde="13:20" hora_hasta="14:15" grupo="2ESOB" contenido="VLLLOMCE" docente="61144366L" aula="1.06" idioma="V"/>
+      <horario_grupo dia_semana="L" sesion_orden="1" hora_desde="14:15" hora_hasta="15:10" grupo="1ESOB" contenido="VLLLOMCE" docente="61144366L" aula="0.08" idioma="V"/>
+
+      <horario_grupo dia_semana="M" sesion_orden="1" hora_desde="08:15" hora_hasta="09:10" grupo="4ESOB" contenido="VLLLOMCE" docente="61144366L" aula="1.01" idioma="V"/>
+      <horario_grupo dia_semana="M" sesion_orden="1" hora_desde="09:10" hora_hasta="10:05" grupo="1ESOC" contenido="VLLLOMCE" docente="61144366L" aula="0.03" idioma="V"/>
+      <horario_grupo dia_semana="M" sesion_orden="1" hora_desde="10:05" hora_hasta="11:00" grupo="2ESOA" contenido="VLLLOMCE" docente="61144366L" aula="0.04" idioma="V"/>
+      <horario_grupo dia_semana="M" sesion_orden="1" hora_desde="11:30" hora_hasta="12:25" grupo="3ESOB" contenido="VLLLOMCE" docente="61144366L" aula="2.01" idioma="V"/>
+      <horario_grupo dia_semana="M" sesion_orden="1" hora_desde="12:25" hora_hasta="13:20" grupo="4ESOA" contenido="VLLLOMCE" docente="61144366L" aula="1.17" idioma="V"/>
+      <horario_grupo dia_semana="M" sesion_orden="1" hora_desde="13:20" hora_hasta="14:15" grupo="2ESOB" contenido="VLLLOMCE" docente="61144366L" aula="1.06" idioma="V"/>
+      <horario_grupo dia_semana="M" sesion_orden="1" hora_desde="14:15" hora_hasta="15:10" grupo="1ESOB" contenido="VLLLOMCE" docente="61144366L" aula="0.08" idioma="V"/>
+
+      <horario_grupo dia_semana="X" sesion_orden="1" hora_desde="08:15" hora_hasta="09:10" grupo="4ESOB" contenido="VLLLOMCE" docente="61144366L" aula="1.01" idioma="V"/>
+      <horario_grupo dia_semana="X" sesion_orden="1" hora_desde="09:10" hora_hasta="10:05" grupo="1ESOC" contenido="VLLLOMCE" docente="61144366L" aula="0.03" idioma="V"/>
+      <horario_grupo dia_semana="X" sesion_orden="1" hora_desde="10:05" hora_hasta="11:00" grupo="2ESOA" contenido="VLLLOMCE" docente="61144366L" aula="0.04" idioma="V"/>
+      <horario_grupo dia_semana="X" sesion_orden="1" hora_desde="11:30" hora_hasta="12:25" grupo="3ESOB" contenido="VLLLOMCE" docente="61144366L" aula="2.01" idioma="V"/>
+      <horario_grupo dia_semana="X" sesion_orden="1" hora_desde="12:25" hora_hasta="13:20" grupo="4ESOA" contenido="VLLLOMCE" docente="61144366L" aula="1.17" idioma="V"/>
+      <horario_grupo dia_semana="X" sesion_orden="1" hora_desde="13:20" hora_hasta="14:15" grupo="2ESOB" contenido="VLLLOMCE" docente="61144366L" aula="1.06" idioma="V"/>
+      <horario_grupo dia_semana="X" sesion_orden="1" hora_desde="14:15" hora_hasta="15:10" grupo="1ESOB" contenido="VLLLOMCE" docente="61144366L" aula="0.08" idioma="V"/>
+
+      <horario_grupo dia_semana="J" sesion_orden="1" hora_desde="08:15" hora_hasta="09:10" grupo="4ESOB" contenido="VLLLOMCE" docente="61144366L" aula="1.01" idioma="V"/>
+      <horario_grupo dia_semana="J" sesion_orden="1" hora_desde="09:10" hora_hasta="10:05" grupo="1ESOC" contenido="VLLLOMCE" docente="61144366L" aula="0.03" idioma="V"/>
+      <horario_grupo dia_semana="J" sesion_orden="1" hora_desde="10:05" hora_hasta="11:00" grupo="2ESOA" contenido="VLLLOMCE" docente="61144366L" aula="0.04" idioma="V"/>
+      <horario_grupo dia_semana="J" sesion_orden="1" hora_desde="11:30" hora_hasta="12:25" grupo="3ESOB" contenido="VLLLOMCE" docente="61144366L" aula="2.01" idioma="V"/>
+      <horario_grupo dia_semana="J" sesion_orden="1" hora_desde="12:25" hora_hasta="13:20" grupo="4ESOA" contenido="VLLLOMCE" docente="61144366L" aula="1.17" idioma="V"/>
+      <horario_grupo dia_semana="J" sesion_orden="1" hora_desde="13:20" hora_hasta="14:15" grupo="2ESOB" contenido="VLLLOMCE" docente="61144366L" aula="1.06" idioma="V"/>
+      <horario_grupo dia_semana="J" sesion_orden="1" hora_desde="14:15" hora_hasta="15:10" grupo="1ESOB" contenido="VLLLOMCE" docente="61144366L" aula="0.08" idioma="V"/>
+
+      <horario_grupo dia_semana="V" sesion_orden="1" hora_desde="08:15" hora_hasta="09:10" grupo="4ESOB" contenido="VLLLOMCE" docente="61144366L" aula="1.01" idioma="V"/>
+      <horario_grupo dia_semana="V" sesion_orden="1" hora_desde="09:10" hora_hasta="10:05" grupo="1ESOC" contenido="VLLLOMCE" docente="61144366L" aula="0.03" idioma="V"/>
+      <horario_grupo dia_semana="V" sesion_orden="1" hora_desde="10:05" hora_hasta="11:00" grupo="2ESOA" contenido="VLLLOMCE" docente="61144366L" aula="0.04" idioma="V"/>
+      <horario_grupo dia_semana="V" sesion_orden="1" hora_desde="11:30" hora_hasta="12:25" grupo="3ESOB" contenido="VLLLOMCE" docente="61144366L" aula="2.01" idioma="V"/>
+      <horario_grupo dia_semana="V" sesion_orden="1" hora_desde="12:25" hora_hasta="13:20" grupo="4ESOA" contenido="VLLLOMCE" docente="61144366L" aula="1.17" idioma="V"/>
+      <horario_grupo dia_semana="V" sesion_orden="1" hora_desde="13:20" hora_hasta="14:15" grupo="2ESOB" contenido="VLLLOMCE" docente="61144366L" aula="1.06" idioma="V"/>
+      <horario_grupo dia_semana="V" sesion_orden="1" hora_desde="14:15" hora_hasta="15:10" grupo="1ESOB" contenido="VLLLOMCE" docente="61144366L" aula="0.08" idioma="V"/>
+    
+      
+      <horario_grupo dia_semana="L" sesion_orden="1" hora_desde="08:15" hora_hasta="09:10" grupo="4ESOB" contenido="VLLLOMCE" docente="81932825N" aula="1.01" idioma="V"/>
+      <horario_grupo dia_semana="L" sesion_orden="1" hora_desde="09:10" hora_hasta="10:05" grupo="1ESOC" contenido="VLLLOMCE" docente="81932825N" aula="0.03" idioma="V"/>
+      <horario_grupo dia_semana="L" sesion_orden="1" hora_desde="10:05" hora_hasta="11:00" grupo="2ESOA" contenido="VLLLOMCE" docente="81932825N" aula="0.04" idioma="V"/>
+      <horario_grupo dia_semana="L" sesion_orden="1" hora_desde="11:30" hora_hasta="12:25" grupo="3ESOB" contenido="VLLLOMCE" docente="81932825N" aula="2.01" idioma="V"/>
+      <horario_grupo dia_semana="L" sesion_orden="1" hora_desde="12:25" hora_hasta="13:20" grupo="4ESOA" contenido="VLLLOMCE" docente="81932825N" aula="1.17" idioma="V"/>
+      <horario_grupo dia_semana="L" sesion_orden="1" hora_desde="13:20" hora_hasta="14:15" grupo="2ESOB" contenido="VLLLOMCE" docente="81932825N" aula="1.06" idioma="V"/>
+      <horario_grupo dia_semana="L" sesion_orden="1" hora_desde="14:15" hora_hasta="15:10" grupo="1ESOB" contenido="VLLLOMCE" docente="81932825N" aula="0.08" idioma="V"/>
+
+      <horario_grupo dia_semana="M" sesion_orden="1" hora_desde="08:15" hora_hasta="09:10" grupo="4ESOB" contenido="VLLLOMCE" docente="81932825N" aula="1.01" idioma="V"/>
+      <horario_grupo dia_semana="M" sesion_orden="1" hora_desde="09:10" hora_hasta="10:05" grupo="1ESOC" contenido="VLLLOMCE" docente="81932825N" aula="0.03" idioma="V"/>
+      <horario_grupo dia_semana="M" sesion_orden="1" hora_desde="10:05" hora_hasta="11:00" grupo="2ESOA" contenido="VLLLOMCE" docente="81932825N" aula="0.04" idioma="V"/>
+      <horario_grupo dia_semana="M" sesion_orden="1" hora_desde="11:30" hora_hasta="12:25" grupo="3ESOB" contenido="VLLLOMCE" docente="81932825N" aula="2.01" idioma="V"/>
+      <horario_grupo dia_semana="M" sesion_orden="1" hora_desde="12:25" hora_hasta="13:20" grupo="4ESOA" contenido="VLLLOMCE" docente="81932825N" aula="1.17" idioma="V"/>
+      <horario_grupo dia_semana="M" sesion_orden="1" hora_desde="13:20" hora_hasta="14:15" grupo="2ESOB" contenido="VLLLOMCE" docente="81932825N" aula="1.06" idioma="V"/>
+      <horario_grupo dia_semana="M" sesion_orden="1" hora_desde="14:15" hora_hasta="15:10" grupo="1ESOB" contenido="VLLLOMCE" docente="81932825N" aula="0.08" idioma="V"/>
+
+      <horario_grupo dia_semana="X" sesion_orden="1" hora_desde="08:15" hora_hasta="09:10" grupo="4ESOB" contenido="VLLLOMCE" docente="81932825N" aula="1.01" idioma="V"/>
+      <horario_grupo dia_semana="X" sesion_orden="1" hora_desde="09:10" hora_hasta="10:05" grupo="1ESOC" contenido="VLLLOMCE" docente="81932825N" aula="0.03" idioma="V"/>
+      <horario_grupo dia_semana="X" sesion_orden="1" hora_desde="10:05" hora_hasta="11:00" grupo="2ESOA" contenido="VLLLOMCE" docente="81932825N" aula="0.04" idioma="V"/>
+      <horario_grupo dia_semana="X" sesion_orden="1" hora_desde="11:30" hora_hasta="12:25" grupo="3ESOB" contenido="VLLLOMCE" docente="81932825N" aula="2.01" idioma="V"/>
+      <horario_grupo dia_semana="X" sesion_orden="1" hora_desde="12:25" hora_hasta="13:20" grupo="4ESOA" contenido="VLLLOMCE" docente="81932825N" aula="1.17" idioma="V"/>
+      <horario_grupo dia_semana="X" sesion_orden="1" hora_desde="13:20" hora_hasta="14:15" grupo="2ESOB" contenido="VLLLOMCE" docente="81932825N" aula="1.06" idioma="V"/>
+      <horario_grupo dia_semana="X" sesion_orden="1" hora_desde="14:15" hora_hasta="15:10" grupo="1ESOB" contenido="VLLLOMCE" docente="81932825N" aula="0.08" idioma="V"/>
+
+      <horario_grupo dia_semana="J" sesion_orden="1" hora_desde="08:15" hora_hasta="09:10" grupo="4ESOB" contenido="VLLLOMCE" docente="81932825N" aula="1.01" idioma="V"/>
+      <horario_grupo dia_semana="J" sesion_orden="1" hora_desde="09:10" hora_hasta="10:05" grupo="1ESOC" contenido="VLLLOMCE" docente="81932825N" aula="0.03" idioma="V"/>
+      <horario_grupo dia_semana="J" sesion_orden="1" hora_desde="10:05" hora_hasta="11:00" grupo="2ESOA" contenido="VLLLOMCE" docente="81932825N" aula="0.04" idioma="V"/>
+      <horario_grupo dia_semana="J" sesion_orden="1" hora_desde="11:30" hora_hasta="12:25" grupo="3ESOB" contenido="VLLLOMCE" docente="81932825N" aula="2.01" idioma="V"/>
+      <horario_grupo dia_semana="J" sesion_orden="1" hora_desde="12:25" hora_hasta="13:20" grupo="4ESOA" contenido="VLLLOMCE" docente="81932825N" aula="1.17" idioma="V"/>
+      <horario_grupo dia_semana="J" sesion_orden="1" hora_desde="13:20" hora_hasta="14:15" grupo="2ESOB" contenido="VLLLOMCE" docente="81932825N" aula="1.06" idioma="V"/>
+      <horario_grupo dia_semana="J" sesion_orden="1" hora_desde="14:15" hora_hasta="15:10" grupo="1ESOB" contenido="VLLLOMCE" docente="81932825N" aula="0.08" idioma="V"/>
+
+      <horario_grupo dia_semana="V" sesion_orden="1" hora_desde="08:15" hora_hasta="09:10" grupo="4ESOB" contenido="VLLLOMCE" docente="81932825N" aula="1.01" idioma="V"/>
+      <horario_grupo dia_semana="V" sesion_orden="1" hora_desde="09:10" hora_hasta="10:05" grupo="1ESOC" contenido="VLLLOMCE" docente="81932825N" aula="0.03" idioma="V"/>
+      <horario_grupo dia_semana="V" sesion_orden="1" hora_desde="10:05" hora_hasta="11:00" grupo="2ESOA" contenido="VLLLOMCE" docente="81932825N" aula="0.04" idioma="V"/>
+      <horario_grupo dia_semana="V" sesion_orden="1" hora_desde="11:30" hora_hasta="12:25" grupo="3ESOB" contenido="VLLLOMCE" docente="81932825N" aula="2.01" idioma="V"/>
+      <horario_grupo dia_semana="V" sesion_orden="1" hora_desde="12:25" hora_hasta="13:20" grupo="4ESOA" contenido="VLLLOMCE" docente="81932825N" aula="1.17" idioma="V"/>
+      <horario_grupo dia_semana="V" sesion_orden="1" hora_desde="13:20" hora_hasta="14:15" grupo="2ESOB" contenido="VLLLOMCE" docente="81932825N" aula="1.06" idioma="V"/>
+      <horario_grupo dia_semana="V" sesion_orden="1" hora_desde="14:15" hora_hasta="15:10" grupo="1ESOB" contenido="VLLLOMCE" docente="81932825N" aula="0.08" idioma="V"/>
+
+      <horario_grupo dia_semana="L" sesion_orden="1" hora_desde="08:15" hora_hasta="09:10" grupo="4ESOB" contenido="VLLLOMCE" docente="60543413D" aula="1.01" idioma="V"/>
+      <horario_grupo dia_semana="L" sesion_orden="1" hora_desde="09:10" hora_hasta="10:05" grupo="1ESOC" contenido="VLLLOMCE" docente="60543413D" aula="0.03" idioma="V"/>
+      <horario_grupo dia_semana="L" sesion_orden="1" hora_desde="10:05" hora_hasta="11:00" grupo="2ESOA" contenido="VLLLOMCE" docente="60543413D" aula="0.04" idioma="V"/>
+      <horario_grupo dia_semana="L" sesion_orden="1" hora_desde="11:30" hora_hasta="12:25" grupo="3ESOB" contenido="VLLLOMCE" docente="60543413D" aula="2.01" idioma="V"/>
+      <horario_grupo dia_semana="L" sesion_orden="1" hora_desde="12:25" hora_hasta="13:20" grupo="4ESOA" contenido="VLLLOMCE" docente="60543413D" aula="1.17" idioma="V"/>
+      <horario_grupo dia_semana="L" sesion_orden="1" hora_desde="13:20" hora_hasta="14:15" grupo="2ESOB" contenido="VLLLOMCE" docente="60543413D" aula="1.06" idioma="V"/>
+      <horario_grupo dia_semana="L" sesion_orden="1" hora_desde="14:15" hora_hasta="15:10" grupo="1ESOB" contenido="VLLLOMCE" docente="60543413D" aula="0.08" idioma="V"/>
+
+      <horario_grupo dia_semana="M" sesion_orden="1" hora_desde="08:15" hora_hasta="09:10" grupo="4ESOB" contenido="VLLLOMCE" docente="60543413D" aula="1.01" idioma="V"/>
+      <horario_grupo dia_semana="M" sesion_orden="1" hora_desde="09:10" hora_hasta="10:05" grupo="1ESOC" contenido="VLLLOMCE" docente="60543413D" aula="0.03" idioma="V"/>
+      <horario_grupo dia_semana="M" sesion_orden="1" hora_desde="10:05" hora_hasta="11:00" grupo="2ESOA" contenido="VLLLOMCE" docente="60543413D" aula="0.04" idioma="V"/>
+      <horario_grupo dia_semana="M" sesion_orden="1" hora_desde="11:30" hora_hasta="12:25" grupo="3ESOB" contenido="VLLLOMCE" docente="60543413D" aula="2.01" idioma="V"/>
+      <horario_grupo dia_semana="M" sesion_orden="1" hora_desde="12:25" hora_hasta="13:20" grupo="4ESOA" contenido="VLLLOMCE" docente="60543413D" aula="1.17" idioma="V"/>
+      <horario_grupo dia_semana="M" sesion_orden="1" hora_desde="13:20" hora_hasta="14:15" grupo="2ESOB" contenido="VLLLOMCE" docente="60543413D" aula="1.06" idioma="V"/>
+      <horario_grupo dia_semana="M" sesion_orden="1" hora_desde="14:15" hora_hasta="15:10" grupo="1ESOB" contenido="VLLLOMCE" docente="60543413D" aula="0.08" idioma="V"/>
+
+      <horario_grupo dia_semana="X" sesion_orden="1" hora_desde="08:15" hora_hasta="09:10" grupo="4ESOB" contenido="VLLLOMCE" docente="60543413D" aula="1.01" idioma="V"/>
+      <horario_grupo dia_semana="X" sesion_orden="1" hora_desde="09:10" hora_hasta="10:05" grupo="1ESOC" contenido="VLLLOMCE" docente="60543413D" aula="0.03" idioma="V"/>
+      <horario_grupo dia_semana="X" sesion_orden="1" hora_desde="10:05" hora_hasta="11:00" grupo="2ESOA" contenido="VLLLOMCE" docente="60543413D" aula="0.04" idioma="V"/>
+      <horario_grupo dia_semana="X" sesion_orden="1" hora_desde="11:30" hora_hasta="12:25" grupo="3ESOB" contenido="VLLLOMCE" docente="60543413D" aula="2.01" idioma="V"/>
+      <horario_grupo dia_semana="X" sesion_orden="1" hora_desde="12:25" hora_hasta="13:20" grupo="4ESOA" contenido="VLLLOMCE" docente="60543413D" aula="1.17" idioma="V"/>
+      <horario_grupo dia_semana="X" sesion_orden="1" hora_desde="13:20" hora_hasta="14:15" grupo="2ESOB" contenido="VLLLOMCE" docente="60543413D" aula="1.06" idioma="V"/>
+      <horario_grupo dia_semana="X" sesion_orden="1" hora_desde="14:15" hora_hasta="15:10" grupo="1ESOB" contenido="VLLLOMCE" docente="60543413D" aula="0.08" idioma="V"/>
+
+      <horario_grupo dia_semana="J" sesion_orden="1" hora_desde="08:15" hora_hasta="09:10" grupo="4ESOB" contenido="VLLLOMCE" docente="60543413D" aula="1.01" idioma="V"/>
+      <horario_grupo dia_semana="J" sesion_orden="1" hora_desde="09:10" hora_hasta="10:05" grupo="1ESOC" contenido="VLLLOMCE" docente="60543413D" aula="0.03" idioma="V"/>
+      <horario_grupo dia_semana="J" sesion_orden="1" hora_desde="10:05" hora_hasta="11:00" grupo="2ESOA" contenido="VLLLOMCE" docente="60543413D" aula="0.04" idioma="V"/>
+      <horario_grupo dia_semana="J" sesion_orden="1" hora_desde="11:30" hora_hasta="12:25" grupo="3ESOB" contenido="VLLLOMCE" docente="60543413D" aula="2.01" idioma="V"/>
+      <horario_grupo dia_semana="J" sesion_orden="1" hora_desde="12:25" hora_hasta="13:20" grupo="4ESOA" contenido="VLLLOMCE" docente="60543413D" aula="1.17" idioma="V"/>
+      <horario_grupo dia_semana="J" sesion_orden="1" hora_desde="13:20" hora_hasta="14:15" grupo="2ESOB" contenido="VLLLOMCE" docente="60543413D" aula="1.06" idioma="V"/>
+      <horario_grupo dia_semana="J" sesion_orden="1" hora_desde="14:15" hora_hasta="15:10" grupo="1ESOB" contenido="VLLLOMCE" docente="60543413D" aula="0.08" idioma="V"/>
+
+      <horario_grupo dia_semana="V" sesion_orden="1" hora_desde="08:15" hora_hasta="09:10" grupo="4ESOB" contenido="VLLLOMCE" docente="60543413D" aula="1.01" idioma="V"/>
+      <horario_grupo dia_semana="V" sesion_orden="1" hora_desde="09:10" hora_hasta="10:05" grupo="1ESOC" contenido="VLLLOMCE" docente="60543413D" aula="0.03" idioma="V"/>
+      <horario_grupo dia_semana="V" sesion_orden="1" hora_desde="10:05" hora_hasta="11:00" grupo="2ESOA" contenido="VLLLOMCE" docente="60543413D" aula="0.04" idioma="V"/>
+      <horario_grupo dia_semana="V" sesion_orden="1" hora_desde="11:30" hora_hasta="12:25" grupo="3ESOB" contenido="VLLLOMCE" docente="60543413D" aula="2.01" idioma="V"/>
+      <horario_grupo dia_semana="V" sesion_orden="1" hora_desde="12:25" hora_hasta="13:20" grupo="4ESOA" contenido="VLLLOMCE" docente="60543413D" aula="1.17" idioma="V"/>
+      <horario_grupo dia_semana="V" sesion_orden="1" hora_desde="13:20" hora_hasta="14:15" grupo="2ESOB" contenido="VLLLOMCE" docente="60543413D" aula="1.06" idioma="V"/>
+      <horario_grupo dia_semana="V" sesion_orden="1" hora_desde="14:15" hora_hasta="15:10" grupo="1ESOB" contenido="VLLLOMCE" docente="60543413D" aula="0.08" idioma="V"/>
+
+      <horario_grupo dia_semana="L" sesion_orden="1" hora_desde="08:15" hora_hasta="09:10" grupo="4ESOB" contenido="VLLLOMCE" docente="82405120G" aula="1.01" idioma="V"/>
+      <horario_grupo dia_semana="L" sesion_orden="1" hora_desde="09:10" hora_hasta="10:05" grupo="1ESOC" contenido="VLLLOMCE" docente="82405120G" aula="0.03" idioma="V"/>
+      <horario_grupo dia_semana="L" sesion_orden="1" hora_desde="10:05" hora_hasta="11:00" grupo="2ESOA" contenido="VLLLOMCE" docente="82405120G" aula="0.04" idioma="V"/>
+      <horario_grupo dia_semana="L" sesion_orden="1" hora_desde="11:30" hora_hasta="12:25" grupo="3ESOB" contenido="VLLLOMCE" docente="82405120G" aula="2.01" idioma="V"/>
+      <horario_grupo dia_semana="L" sesion_orden="1" hora_desde="12:25" hora_hasta="13:20" grupo="4ESOA" contenido="VLLLOMCE" docente="82405120G" aula="1.17" idioma="V"/>
+      <horario_grupo dia_semana="L" sesion_orden="1" hora_desde="13:20" hora_hasta="14:15" grupo="2ESOB" contenido="VLLLOMCE" docente="82405120G" aula="1.06" idioma="V"/>
+      <horario_grupo dia_semana="L" sesion_orden="1" hora_desde="14:15" hora_hasta="15:10" grupo="1ESOB" contenido="VLLLOMCE" docente="82405120G" aula="0.08" idioma="V"/>
+
+      <horario_grupo dia_semana="M" sesion_orden="1" hora_desde="08:15" hora_hasta="09:10" grupo="4ESOB" contenido="VLLLOMCE" docente="82405120G" aula="1.01" idioma="V"/>
+      <horario_grupo dia_semana="M" sesion_orden="1" hora_desde="09:10" hora_hasta="10:05" grupo="1ESOC" contenido="VLLLOMCE" docente="82405120G" aula="0.03" idioma="V"/>
+      <horario_grupo dia_semana="M" sesion_orden="1" hora_desde="10:05" hora_hasta="11:00" grupo="2ESOA" contenido="VLLLOMCE" docente="82405120G" aula="0.04" idioma="V"/>
+      <horario_grupo dia_semana="M" sesion_orden="1" hora_desde="11:30" hora_hasta="12:25" grupo="3ESOB" contenido="VLLLOMCE" docente="82405120G" aula="2.01" idioma="V"/>
+      <horario_grupo dia_semana="M" sesion_orden="1" hora_desde="12:25" hora_hasta="13:20" grupo="4ESOA" contenido="VLLLOMCE" docente="82405120G" aula="1.17" idioma="V"/>
+      <horario_grupo dia_semana="M" sesion_orden="1" hora_desde="13:20" hora_hasta="14:15" grupo="2ESOB" contenido="VLLLOMCE" docente="82405120G" aula="1.06" idioma="V"/>
+      <horario_grupo dia_semana="M" sesion_orden="1" hora_desde="14:15" hora_hasta="15:10" grupo="1ESOB" contenido="VLLLOMCE" docente="82405120G" aula="0.08" idioma="V"/>
+
+      <horario_grupo dia_semana="X" sesion_orden="1" hora_desde="08:15" hora_hasta="09:10" grupo="4ESOB" contenido="VLLLOMCE" docente="82405120G" aula="1.01" idioma="V"/>
+      <horario_grupo dia_semana="X" sesion_orden="1" hora_desde="09:10" hora_hasta="10:05" grupo="1ESOC" contenido="VLLLOMCE" docente="82405120G" aula="0.03" idioma="V"/>
+      <horario_grupo dia_semana="X" sesion_orden="1" hora_desde="10:05" hora_hasta="11:00" grupo="2ESOA" contenido="VLLLOMCE" docente="82405120G" aula="0.04" idioma="V"/>
+      <horario_grupo dia_semana="X" sesion_orden="1" hora_desde="11:30" hora_hasta="12:25" grupo="3ESOB" contenido="VLLLOMCE" docente="82405120G" aula="2.01" idioma="V"/>
+      <horario_grupo dia_semana="X" sesion_orden="1" hora_desde="12:25" hora_hasta="13:20" grupo="4ESOA" contenido="VLLLOMCE" docente="82405120G" aula="1.17" idioma="V"/>
+      <horario_grupo dia_semana="X" sesion_orden="1" hora_desde="13:20" hora_hasta="14:15" grupo="2ESOB" contenido="VLLLOMCE" docente="82405120G" aula="1.06" idioma="V"/>
+      <horario_grupo dia_semana="X" sesion_orden="1" hora_desde="14:15" hora_hasta="15:10" grupo="1ESOB" contenido="VLLLOMCE" docente="82405120G" aula="0.08" idioma="V"/>
+
+      <horario_grupo dia_semana="J" sesion_orden="1" hora_desde="08:15" hora_hasta="09:10" grupo="4ESOB" contenido="VLLLOMCE" docente="82405120G" aula="1.01" idioma="V"/>
+      <horario_grupo dia_semana="J" sesion_orden="1" hora_desde="09:10" hora_hasta="10:05" grupo="1ESOC" contenido="VLLLOMCE" docente="82405120G" aula="0.03" idioma="V"/>
+      <horario_grupo dia_semana="J" sesion_orden="1" hora_desde="10:05" hora_hasta="11:00" grupo="2ESOA" contenido="VLLLOMCE" docente="82405120G" aula="0.04" idioma="V"/>
+      <horario_grupo dia_semana="J" sesion_orden="1" hora_desde="11:30" hora_hasta="12:25" grupo="3ESOB" contenido="VLLLOMCE" docente="82405120G" aula="2.01" idioma="V"/>
+      <horario_grupo dia_semana="J" sesion_orden="1" hora_desde="12:25" hora_hasta="13:20" grupo="4ESOA" contenido="VLLLOMCE" docente="82405120G" aula="1.17" idioma="V"/>
+      <horario_grupo dia_semana="J" sesion_orden="1" hora_desde="13:20" hora_hasta="14:15" grupo="2ESOB" contenido="VLLLOMCE" docente="82405120G" aula="1.06" idioma="V"/>
+      <horario_grupo dia_semana="J" sesion_orden="1" hora_desde="14:15" hora_hasta="15:10" grupo="1ESOB" contenido="VLLLOMCE" docente="82405120G" aula="0.08" idioma="V"/>
+
+      <horario_grupo dia_semana="V" sesion_orden="1" hora_desde="08:15" hora_hasta="09:10" grupo="4ESOB" contenido="VLLLOMCE" docente="82405120G" aula="1.01" idioma="V"/>
+      <horario_grupo dia_semana="V" sesion_orden="1" hora_desde="09:10" hora_hasta="10:05" grupo="1ESOC" contenido="VLLLOMCE" docente="82405120G" aula="0.03" idioma="V"/>
+      <horario_grupo dia_semana="V" sesion_orden="1" hora_desde="10:05" hora_hasta="11:00" grupo="2ESOA" contenido="VLLLOMCE" docente="82405120G" aula="0.04" idioma="V"/>
+      <horario_grupo dia_semana="V" sesion_orden="1" hora_desde="11:30" hora_hasta="12:25" grupo="3ESOB" contenido="VLLLOMCE" docente="82405120G" aula="2.01" idioma="V"/>
+      <horario_grupo dia_semana="V" sesion_orden="1" hora_desde="12:25" hora_hasta="13:20" grupo="4ESOA" contenido="VLLLOMCE" docente="82405120G" aula="1.17" idioma="V"/>
+      <horario_grupo dia_semana="V" sesion_orden="1" hora_desde="13:20" hora_hasta="14:15" grupo="2ESOB" contenido="VLLLOMCE" docente="82405120G" aula="1.06" idioma="V"/>
+      <horario_grupo dia_semana="V" sesion_orden="1" hora_desde="14:15" hora_hasta="15:10" grupo="1ESOB" contenido="VLLLOMCE" docente="82405120G" aula="0.08" idioma="V"/>
+
+      
+      <horario_grupo dia_semana="L" sesion_orden="1" hora_desde="08:15" hora_hasta="09:10" grupo="4ESOB" contenido="VLLLOMCE" docente="57831832X" aula="1.01" idioma="V"/>
+      <horario_grupo dia_semana="L" sesion_orden="1" hora_desde="09:10" hora_hasta="10:05" grupo="1ESOC" contenido="VLLLOMCE" docente="57831832X" aula="0.03" idioma="V"/>
+      <horario_grupo dia_semana="L" sesion_orden="1" hora_desde="10:05" hora_hasta="11:00" grupo="2ESOA" contenido="VLLLOMCE" docente="57831832X" aula="0.04" idioma="V"/>
+      <horario_grupo dia_semana="L" sesion_orden="1" hora_desde="11:30" hora_hasta="12:25" grupo="3ESOB" contenido="VLLLOMCE" docente="57831832X" aula="2.01" idioma="V"/>
+      <horario_grupo dia_semana="L" sesion_orden="1" hora_desde="12:25" hora_hasta="13:20" grupo="4ESOA" contenido="VLLLOMCE" docente="57831832X" aula="1.17" idioma="V"/>
+      <horario_grupo dia_semana="L" sesion_orden="1" hora_desde="13:20" hora_hasta="14:15" grupo="2ESOB" contenido="VLLLOMCE" docente="57831832X" aula="1.06" idioma="V"/>
+      <horario_grupo dia_semana="L" sesion_orden="1" hora_desde="14:15" hora_hasta="15:10" grupo="1ESOB" contenido="VLLLOMCE" docente="57831832X" aula="0.08" idioma="V"/>
+
+      <horario_grupo dia_semana="M" sesion_orden="1" hora_desde="08:15" hora_hasta="09:10" grupo="4ESOB" contenido="VLLLOMCE" docente="57831832X" aula="1.01" idioma="V"/>
+      <horario_grupo dia_semana="M" sesion_orden="1" hora_desde="09:10" hora_hasta="10:05" grupo="1ESOC" contenido="VLLLOMCE" docente="57831832X" aula="0.03" idioma="V"/>
+      <horario_grupo dia_semana="M" sesion_orden="1" hora_desde="10:05" hora_hasta="11:00" grupo="2ESOA" contenido="VLLLOMCE" docente="57831832X" aula="0.04" idioma="V"/>
+      <horario_grupo dia_semana="M" sesion_orden="1" hora_desde="11:30" hora_hasta="12:25" grupo="3ESOB" contenido="VLLLOMCE" docente="57831832X" aula="2.01" idioma="V"/>
+      <horario_grupo dia_semana="M" sesion_orden="1" hora_desde="12:25" hora_hasta="13:20" grupo="4ESOA" contenido="VLLLOMCE" docente="57831832X" aula="1.17" idioma="V"/>
+      <horario_grupo dia_semana="M" sesion_orden="1" hora_desde="13:20" hora_hasta="14:15" grupo="2ESOB" contenido="VLLLOMCE" docente="57831832X" aula="1.06" idioma="V"/>
+      <horario_grupo dia_semana="M" sesion_orden="1" hora_desde="14:15" hora_hasta="15:10" grupo="1ESOB" contenido="VLLLOMCE" docente="57831832X" aula="0.08" idioma="V"/>
+
+      <horario_grupo dia_semana="X" sesion_orden="1" hora_desde="08:15" hora_hasta="09:10" grupo="4ESOB" contenido="VLLLOMCE" docente="57831832X" aula="1.01" idioma="V"/>
+      <horario_grupo dia_semana="X" sesion_orden="1" hora_desde="09:10" hora_hasta="10:05" grupo="1ESOC" contenido="VLLLOMCE" docente="57831832X" aula="0.03" idioma="V"/>
+      <horario_grupo dia_semana="X" sesion_orden="1" hora_desde="10:05" hora_hasta="11:00" grupo="2ESOA" contenido="VLLLOMCE" docente="57831832X" aula="0.04" idioma="V"/>
+      <horario_grupo dia_semana="X" sesion_orden="1" hora_desde="11:30" hora_hasta="12:25" grupo="3ESOB" contenido="VLLLOMCE" docente="57831832X" aula="2.01" idioma="V"/>
+      <horario_grupo dia_semana="X" sesion_orden="1" hora_desde="12:25" hora_hasta="13:20" grupo="4ESOA" contenido="VLLLOMCE" docente="57831832X" aula="1.17" idioma="V"/>
+      <horario_grupo dia_semana="X" sesion_orden="1" hora_desde="13:20" hora_hasta="14:15" grupo="2ESOB" contenido="VLLLOMCE" docente="57831832X" aula="1.06" idioma="V"/>
+      <horario_grupo dia_semana="X" sesion_orden="1" hora_desde="14:15" hora_hasta="15:10" grupo="1ESOB" contenido="VLLLOMCE" docente="57831832X" aula="0.08" idioma="V"/>
+
+      <horario_grupo dia_semana="J" sesion_orden="1" hora_desde="08:15" hora_hasta="09:10" grupo="4ESOB" contenido="VLLLOMCE" docente="57831832X" aula="1.01" idioma="V"/>
+      <horario_grupo dia_semana="J" sesion_orden="1" hora_desde="09:10" hora_hasta="10:05" grupo="1ESOC" contenido="VLLLOMCE" docente="57831832X" aula="0.03" idioma="V"/>
+      <horario_grupo dia_semana="J" sesion_orden="1" hora_desde="10:05" hora_hasta="11:00" grupo="2ESOA" contenido="VLLLOMCE" docente="57831832X" aula="0.04" idioma="V"/>
+      <horario_grupo dia_semana="J" sesion_orden="1" hora_desde="11:30" hora_hasta="12:25" grupo="3ESOB" contenido="VLLLOMCE" docente="57831832X" aula="2.01" idioma="V"/>
+      <horario_grupo dia_semana="J" sesion_orden="1" hora_desde="12:25" hora_hasta="13:20" grupo="4ESOA" contenido="VLLLOMCE" docente="57831832X" aula="1.17" idioma="V"/>
+      <horario_grupo dia_semana="J" sesion_orden="1" hora_desde="13:20" hora_hasta="14:15" grupo="2ESOB" contenido="VLLLOMCE" docente="57831832X" aula="1.06" idioma="V"/>
+      <horario_grupo dia_semana="J" sesion_orden="1" hora_desde="14:15" hora_hasta="15:10" grupo="1ESOB" contenido="VLLLOMCE" docente="57831832X" aula="0.08" idioma="V"/>
+
+      <horario_grupo dia_semana="V" sesion_orden="1" hora_desde="08:15" hora_hasta="09:10" grupo="4ESOB" contenido="VLLLOMCE" docente="57831832X" aula="1.01" idioma="V"/>
+      <horario_grupo dia_semana="V" sesion_orden="1" hora_desde="09:10" hora_hasta="10:05" grupo="1ESOC" contenido="VLLLOMCE" docente="57831832X" aula="0.03" idioma="V"/>
+      <horario_grupo dia_semana="V" sesion_orden="1" hora_desde="10:05" hora_hasta="11:00" grupo="2ESOA" contenido="VLLLOMCE" docente="57831832X" aula="0.04" idioma="V"/>
+      <horario_grupo dia_semana="V" sesion_orden="1" hora_desde="11:30" hora_hasta="12:25" grupo="3ESOB" contenido="VLLLOMCE" docente="57831832X" aula="2.01" idioma="V"/>
+      <horario_grupo dia_semana="V" sesion_orden="1" hora_desde="12:25" hora_hasta="13:20" grupo="4ESOA" contenido="VLLLOMCE" docente="57831832X" aula="1.17" idioma="V"/>
+      <horario_grupo dia_semana="V" sesion_orden="1" hora_desde="13:20" hora_hasta="14:15" grupo="2ESOB" contenido="VLLLOMCE" docente="57831832X" aula="1.06" idioma="V"/>
+      <horario_grupo dia_semana="V" sesion_orden="1" hora_desde="14:15" hora_hasta="15:10" grupo="1ESOB" contenido="VLLLOMCE" docente="57831832X" aula="0.08" idioma="V"/>
+    
+    </horarios_grupo>
+</centro>

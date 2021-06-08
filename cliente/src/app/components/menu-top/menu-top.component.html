@@ -1,0 +1,93 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+  <div class="container-fluid">
+    <a class="navbar-brand" routerLink="">IES La Vereda</a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a
+          class="nav-link active"
+          *ngIf="isSecre || isDocente || isAdmin"
+          aria-current="page"
+          routerLink="calendario"
+          routerLinkActive="active"
+        >
+          Ver guardias
+        </a>
+      </li>
+      <li class="nav-item">
+        <a
+          class="nav-link active"
+          *ngIf="(isDocente && estaGuardia) || isAdmin"
+          aria-current="page"
+          routerLink="guardias"
+          routerLinkActive="active"
+        >
+          Guardia
+        </a>
+      </li>
+      <li class="nav-item">
+        <a
+          class="nav-link active"
+          *ngIf="isSecre || isDocente || isAdmin"
+          aria-current="page"
+          routerLink="falta/add"
+          routerLinkActive="active"
+        >
+          Añadir falta
+        </a>
+      </li>
+      <li class="nav-item">
+        <a
+          class="nav-link active"
+          *ngIf="isAdmin"
+          aria-current="page"
+          routerLink="subirxml"
+          routerLinkActive="active"
+        >
+          Añadir XML
+        </a>
+      </li>
+    </ul>
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a
+          class="nav-link active"
+          *ngIf="loginbtn"
+          aria-current="page"
+          routerLink="login"
+          routerLinkActive="active"
+        >
+        <i class="fas fa-sign-in-alt"></i> Iniciar Sesión
+        </a>
+      </li>
+      <li class="nav-item" *ngIf="logoutbtn">
+        <span class="nav-link active">
+          <i class="fas fa-user"></i>
+          {{ nombreDocente }}
+        </span>
+      </li>
+      <li class="nav-item">
+        <a
+          class="nav-link active"
+          *ngIf="logoutbtn"
+          aria-current="page"
+          routerLink=""
+          routerLinkActive="active"
+          (click)="logout()"
+        >
+        <i class="fas fa-sign-out-alt"></i> Cerrar sesión
+        </a>
+      </li>
+    </ul>
+  </div>
+</nav>

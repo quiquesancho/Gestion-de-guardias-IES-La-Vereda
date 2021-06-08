@@ -1,0 +1,259 @@
+<div class="text-center mt-4">
+    <h3>HORARIO DE GUARDIAS</h3>
+</div>
+
+<div class="col-sm-12 col-md-10 mx-auto mt-4">
+    <table class="table table-bordered">
+        <thead class="cabecera">
+            <tr class="text-center">
+                <th>HORARIO</th>
+                <th>LUNES</th>
+                <th>MARTES</th>
+                <th>MIERCOLES</th>
+                <th>JUEVES</th>
+                <th>VIERNES</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="text-center">
+                <td class="hora">8:15 - 9:10</td>
+                <td class="profesores">
+                    <span *ngFor="let user of users">
+                        <span *ngIf="user.diaGuardia == 'L' && user.horaGuardia == '08:15'">{{user.nombre}}
+                            {{user.apellido1}} {{user.apellido2}}<br></span>
+                    </span>
+                </td>
+                <td class="profesores">
+                    <span *ngFor="let user of users">
+                        <span *ngIf="user.diaGuardia == 'M' && user.horaGuardia == '08:15'">{{user.nombre}}
+                            {{user.apellido1}} {{user.apellido2}}<br></span>
+                    </span>
+                </td>
+                <td class="profesores">
+                    <span *ngFor="let user of users">
+                        <span *ngIf="user.diaGuardia == 'X' && user.horaGuardia == '08:15'">{{user.nombre}}
+                            {{user.apellido1}} {{user.apellido2}}<br></span>
+                    </span>
+                </td>
+                <td class="profesores">
+                    <span *ngFor="let user of users">
+                        <span *ngIf="user.diaGuardia == 'J' && user.horaGuardia == '08:15'">{{user.nombre}}
+                            {{user.apellido1}} {{user.apellido2}}<br></span>
+                    </span>
+                </td>
+                <td class="profesores">
+                    <span *ngFor="let user of users">
+                        <span *ngIf="user.diaGuardia == 'V' && user.horaGuardia == '08:15'">{{user.nombre}}
+                            {{user.apellido1}} {{user.apellido2}}<br></span>
+                    </span>
+                </td>
+            </tr>
+            <tr class="text-center">
+                <td class="hora">9:10 - 10:05</td>
+                <td class="profesores">
+                    <span *ngFor="let user of users">
+                        <span *ngIf="user.diaGuardia == 'L' && user.horaGuardia == '09:10'">{{user.nombre}}
+                            {{user.apellido1}} {{user.apellido2}}<br></span>
+                    </span>
+                </td>
+                <td class="profesores">
+                    <span *ngFor="let user of users">
+                        <span *ngIf="user.diaGuardia == 'M' && user.horaGuardia == '09:10'">{{user.nombre}}
+                            {{user.apellido1}} {{user.apellido2}}<br></span>
+                    </span>
+                </td>
+                <td class="profesores">
+                    <span *ngFor="let user of users">
+                        <span *ngIf="user.diaGuardia == 'X' && user.horaGuardia == '09:10'">{{user.nombre}}
+                            {{user.apellido1}} {{user.apellido2}}<br></span>
+                    </span>
+                </td>
+                <td class="profesores">
+                    <span *ngFor="let user of users">
+                        <span *ngIf="user.diaGuardia == 'J' && user.horaGuardia == '09:10'">{{user.nombre}}
+                            {{user.apellido1}} {{user.apellido2}}<br></span>
+                    </span>
+                </td>
+                <td class="profesores">
+                    <span *ngFor="let user of users">
+                        <span *ngIf="user.diaGuardia == 'V' && user.horaGuardia == '09:10'">{{user.nombre}}
+                            {{user.apellido1}} {{user.apellido2}}<br></span>
+                    </span>
+                </td>
+            </tr>
+            <tr class="text-center">
+                <td class="hora">10:05 - 11:00</td>
+                <td class="profesores">
+                    <span *ngFor="let user of users">
+                        <span *ngIf="user.diaGuardia == 'L' && user.horaGuardia == '10:05'">{{user.nombre}}
+                            {{user.apellido1}} {{user.apellido2}}<br></span>
+                    </span>
+                </td>
+                <td class="profesores">
+                    <span *ngFor="let user of users">
+                        <span *ngIf="user.diaGuardia == 'M' && user.horaGuardia == '10:05'">{{user.nombre}}
+                            {{user.apellido1}} {{user.apellido2}}<br></span>
+                    </span>
+                </td>
+                <td class="profesores">
+                    <span *ngFor="let user of users">
+                        <span *ngIf="user.diaGuardia == 'X' && user.horaGuardia == '10:05'">{{user.nombre}}
+                            {{user.apellido1}} {{user.apellido2}}<br></span>
+                    </span>
+                </td>
+                <td class="profesores">
+                    <span *ngFor="let user of users">
+                        <span *ngIf="user.diaGuardia == 'J' && user.horaGuardia == '10:05'">{{user.nombre}}
+                            {{user.apellido1}} {{user.apellido2}}<br></span>
+                    </span>
+                </td>
+                <td class="profesores">
+                    <span *ngFor="let user of users">
+                        <span *ngIf="user.diaGuardia == 'V' && user.horaGuardia == '10:05'">{{user.nombre}}
+                            {{user.apellido1}} {{user.apellido2}}<br></span>
+                    </span>
+                </td>
+            </tr>
+            <tr class="text-center">
+                <td class="hora">11:00 - 11:30</td>
+                <td class="patio">PATIO</td>
+                <td class="patio">PATIO</td>
+                <td class="patio">PATIO</td>
+                <td class="patio">PATIO</td>
+                <td class="patio">PATIO</td>
+            </tr>
+            <tr class="text-center">
+                <td class="hora">11:30 - 12:25</td>
+                <td class="profesores">
+                    <span *ngFor="let user of users">
+                        <span *ngIf="user.diaGuardia == 'L' && user.horaGuardia == '11:30'">{{user.nombre}}
+                            {{user.apellido1}} {{user.apellido2}}<br></span>
+                    </span>
+                </td>
+                <td class="profesores">
+                    <span *ngFor="let user of users">
+                        <span *ngIf="user.diaGuardia == 'M' && user.horaGuardia == '11:30'">{{user.nombre}}
+                            {{user.apellido1}} {{user.apellido2}}<br></span>
+                    </span>
+                </td>
+                <td class="profesores">
+                    <span *ngFor="let user of users">
+                        <span *ngIf="user.diaGuardia == 'X' && user.horaGuardia == '11:30'">{{user.nombre}}
+                            {{user.apellido1}} {{user.apellido2}}<br></span>
+                    </span>
+                </td>
+                <td class="profesores">
+                    <span *ngFor="let user of users">
+                        <span *ngIf="user.diaGuardia == 'J' && user.horaGuardia == '11:30'">{{user.nombre}}
+                            {{user.apellido1}} {{user.apellido2}}<br></span>
+                    </span>
+                </td>
+                <td class="profesores">
+                    <span *ngFor="let user of users">
+                        <span *ngIf="user.diaGuardia == 'V' && user.horaGuardia == '11:30'">{{user.nombre}}
+                            {{user.apellido1}} {{user.apellido2}}<br></span>
+                    </span>
+                </td>
+            </tr>
+            <tr class="text-center">
+                <td class="hora">12:25 - 13:20</td>
+                <td class="profesores">
+                    <span *ngFor="let user of users">
+                        <span *ngIf="user.diaGuardia == 'L' && user.horaGuardia == '12:25'">{{user.nombre}}
+                            {{user.apellido1}} {{user.apellido2}}<br></span>
+                    </span>
+                </td>
+                <td class="profesores">
+                    <span *ngFor="let user of users">
+                        <span *ngIf="user.diaGuardia == 'M' && user.horaGuardia == '12:25'">{{user.nombre}}
+                            {{user.apellido1}} {{user.apellido2}}<br></span>
+                    </span>
+                </td>
+                <td class="profesores">
+                    <span *ngFor="let user of users">
+                        <span *ngIf="user.diaGuardia == 'X' && user.horaGuardia == '12:25'">{{user.nombre}}
+                            {{user.apellido1}} {{user.apellido2}}<br></span>
+                    </span>
+                </td>
+                <td class="profesores">
+                    <span *ngFor="let user of users">
+                        <span *ngIf="user.diaGuardia == 'J' && user.horaGuardia == '12:25'">{{user.nombre}}
+                            {{user.apellido1}} {{user.apellido2}}<br></span>
+                    </span>
+                </td>
+                <td class="profesores">
+                    <span *ngFor="let user of users">
+                        <span *ngIf="user.diaGuardia == 'V' && user.horaGuardia == '12:25'">{{user.nombre}}
+                            {{user.apellido1}} {{user.apellido2}}<br></span>
+                    </span>
+                </td>
+            </tr>
+            <tr class="text-center">
+                <td class="hora">13:20 - 14:15</td>
+                <td class="profesores">
+                    <span *ngFor="let user of users">
+                        <span *ngIf="user.diaGuardia == 'L' && user.horaGuardia == '13:20'">{{user.nombre}}
+                            {{user.apellido1}} {{user.apellido2}}<br></span>
+                    </span>
+                </td>
+                <td class="profesores">
+                    <span *ngFor="let user of users">
+                        <span *ngIf="user.diaGuardia == 'M' && user.horaGuardia == '13:20'">{{user.nombre}}
+                            {{user.apellido1}} {{user.apellido2}}<br></span>
+                    </span>
+                </td>
+                <td class="profesores">
+                    <span *ngFor="let user of users">
+                        <span *ngIf="user.diaGuardia == 'X' && user.horaGuardia == '13:20'">{{user.nombre}}
+                            {{user.apellido1}} {{user.apellido2}}<br></span>
+                    </span>
+                </td>
+                <td class="profesores">
+                    <span *ngFor="let user of users">
+                        <span *ngIf="user.diaGuardia == 'J' && user.horaGuardia == '13:20'">{{user.nombre}}
+                            {{user.apellido1}} {{user.apellido2}}<br></span>
+                    </span>
+                </td>
+                <td class="profesores">
+                    <span *ngFor="let user of users">
+                        <span *ngIf="user.diaGuardia == 'V' && user.horaGuardia == '13:20'">{{user.nombre}}
+                            {{user.apellido1}} {{user.apellido2}}<br></span>
+                    </span>
+                </td>
+            </tr>
+            <tr class="text-center">
+                <td class="hora">14:15 - 15:30</td>
+                <td class="profesores">
+                    <span *ngFor="let user of users">
+                        <span *ngIf="user.diaGuardia == 'L' && user.horaGuardia == '14:15'">{{user.nombre}}
+                            {{user.apellido1}} {{user.apellido2}}<br></span>
+                    </span>
+                </td>
+                <td class="profesores">
+                    <span *ngFor="let user of users">
+                        <span *ngIf="user.diaGuardia == 'M' && user.horaGuardia == '14:15'">{{user.nombre}}
+                            {{user.apellido1}} {{user.apellido2}}<br></span>
+                    </span>
+                </td>
+                <td class="profesores">
+                    <span *ngFor="let user of users">
+                        <span *ngIf="user.diaGuardia == 'X' && user.horaGuardia == '14:15'">{{user.nombre}}
+                            {{user.apellido1}} {{user.apellido2}}<br></span>
+                    </span>
+                </td>
+                <td class="profesores">
+                    <span *ngFor="let user of users">
+                        <span *ngIf="user.diaGuardia == 'J' && user.horaGuardia == '14:15'">{{user.nombre}}
+                            {{user.apellido1}} {{user.apellido2}}<br></span>
+                    </span>
+                </td>
+                <td class="profesores">
+                    <span *ngFor="let user of users">
+                        <span *ngIf="user.diaGuardia == 'V' && user.horaGuardia == '14:15'">{{user.nombre}}
+                            {{user.apellido1}} {{user.apellido2}}<br></span>
+                    </span>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

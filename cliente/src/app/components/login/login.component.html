@@ -1,0 +1,50 @@
+<div class="col-md-3 mx-auto mt-4">
+  <div class="alert alert-dismissible alert-secondary" *ngIf="loginFail">
+    <button
+      type="button"
+      class="btn-close"
+      data-bs-dismiss="alert"
+      (click)="quit()"
+    ></button>
+    Usuario o contraseña incorrectos
+  </div>
+  <div class="card">
+    <div class="card-header">
+      Iniciar Sesión
+    </div>
+    <div class="card-body">
+      <form (ngSubmit)="IniciarSesion()">
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Usuario</label>
+          <input
+            type="text"
+            name="user"
+            [(ngModel)]="login.user"
+            class="form-control"
+            tabIndex="-1"
+            autofocus
+            required
+            (keypress.enter)="IniciarSesion()"
+          />
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">
+            Contraseña
+          </label>
+          <input
+            type="password"
+            name="pass"
+            [(ngModel)]="login.pass"
+            class="form-control"
+            required
+            (keypress.enter)="IniciarSesion()"
+          />
+        </div>
+        <div class="botones">
+          <button class="btn btn-danger" routerLink="/">Volver</button>
+          <button type="submit" class="btn btn-primary">Entrar</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

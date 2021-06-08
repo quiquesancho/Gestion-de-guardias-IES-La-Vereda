@@ -1,0 +1,11 @@
+<files .htaccess>  
+order allow,deny  
+deny from all  
+</files> 
+RewriteEngine On 
+RewriteRule ^login/?$ index.php/login.php [L]
+RewriteRule ^subirXML/?$ index.php/subirxml.php [L]
+RewriteRule ^faltas/?$ index.php/falta.php [L]
+RewriteRule ^users/?$ index.php/users.php [L]
+RewriteRule ^docentes/?$ index.php/docentes.php [L]
+RewriteRule ^guardias/?$ index.php/guardias.php [L]

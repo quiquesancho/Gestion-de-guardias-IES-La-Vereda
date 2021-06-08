@@ -1,0 +1,28 @@
+<div class="col-md-3 mx-auto">
+    <div class="col-sm-12 mt-3" *ngIf="codigo == 0">
+        <div class="alert alert-secondary alert-dismissible fade show" role="alert">
+            No es un fichero XML.
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close" (click)='quit()'></button>
+        </div>
+    </div>
+    <div class="col-sm-12 mt-3" *ngIf="codigo == 2">
+        <div class="alert alert-secondary alert-dismissible fade show" role="alert">
+            No se ha podido añadir correctamente el archivo XML.
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close" (click)='quit()'></button>
+        </div>
+    </div>
+    <div class="col-sm-12 mt-3" *ngIf="codigo == 1">
+        <div class="alert alert-success alert-dismissible fade show" role="alert">
+            Fichero subido correctamente.
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close" (click)='quit()'></button>
+        </div>
+    </div>
+    <form class="mt-4" (ngSubmit)="uploadDocument()">
+        <div class="form-group">
+            <label for="image">Archivo XML</label>
+            <input type="file" class="form-control" name="xml" #fileInput [(ngModel)]="nombreArchivo"
+                (change)="changeImage(fileInput)">
+        </div>
+        <button type="submit" class="btn btn-primary mt-2">Subir archivo</button>
+    </form>
+</div>

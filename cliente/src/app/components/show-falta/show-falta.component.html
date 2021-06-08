@@ -1,0 +1,127 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-8 mt-3 " *ngIf="faltas.length; else noFaltas">
+            <div class="col-md-6 mb-3 mx-auto text-center">
+                <h3>Faltas de asistencia</h3>
+            </div>
+            <table class="table">
+                <thead class="table-active text-center">
+                    <tr>
+                        <th *ngIf="showProfesor">Profesor</th>
+                        <th>Fecha</th>
+                        <th>Hora</th>
+                        <th>Editar</th>
+                        <th>Eliminar</th>
+                    </tr>
+                </thead>
+                <tbody class="text-center">
+                    <tr *ngFor="let falta of faltas">
+                        <td *ngIf="showProfesor">{{falta.user.nombre}} {{falta.user.apellido1}} {{falta.user.apellido2}}
+                        </td>
+                        <td *ngIf="!falta.isEditing">{{falta.fecha}}</td>
+                        <td *ngIf="falta.isEditing"><input type="date" class="form-control" name="fecha"
+                                [(ngModel)]="editedFalta.fecha" minDate="editedFalta.falta" required></td>
+                        <td *ngIf="!falta.isEditing">{{falta.hora}}</td>
+                        <td *ngIf="falta.isEditing"><select class="form-select" name="hora"
+                                [(ngModel)]="editedFalta.hora" required>
+                                <option value="00:00">Todo el día</option>
+                                <option value="8:15">8:15 - 9:10</option>
+                                <option value="9:10">9:10 - 10:05</option>
+                                <option value="10:05">10:05 - 11:00</option>
+                                <option value="11:30">11:30 - 12:25</option>
+                                <option value="12:25">12:25 - 13:20</option>
+                                <option value="13:20">13:20 - 14:15</option>
+                                <option value="14:15">14:15 - 15:10</option>
+                            </select></td>
+                        <td><button *ngIf="!falta.isEditing" (click)="editFalta(falta)" class="btn btn-info"><i
+                                    class="fas fa-edit"></i>
+                                Editar</button>
+                            <button *ngIf="falta.isEditing" (click)="saveFalta(falta)" class="btn btn-info"><i
+                                    class="fas fa-edit"></i>
+                                Guardar</button>
+                        </td>
+                        <td><button class="btn btn-danger" (click)="deleteFalta(falta)"><i class="fas fa-trash-alt"></i>
+                                Eliminar</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <ng-template #noFaltas>
+            <div class="col-md-6 mt-3 offset-1 text-center">
+                <h3>No hay faltas añadidas</h3>
+            </div>
+        </ng-template>
+        <div class="col-md-3 offset-1">
+            <div class="col-md-12 mt-3 text-center">
+                <h3>Nueva falta</h3>
+            </div>
+            <div class="col-sm-12 mt-3" *ngIf="!correctFalta">
+                <div class="alert alert-secondary alert-dismissible fade show" role="alert">
+                    La fecha tiene que ser posterior a hoy.
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"
+                        (click)='quit()'></button>
+                </div>
+            </div>
+            <div class="col-sm-12 mt-3" *ngIf="sameFalta">
+                <div class="alert alert-secondary alert-dismissible fade show" role="alert">
+                    Ya existe una falta con esta fecha y esta hora.
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"
+                        (click)='quit()'></button>
+                </div>
+            </div>
+            <div class="col-sm-12 mt-3" *ngIf="deletedFalta">
+                <div class="alert alert-success alert-dismissible fade show" role="alert">
+                    Falta eliminada correctamente.
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"
+                        (click)='quit()'></button>
+                </div>
+            </div>
+            <div class="col-sm-12 mt-3" *ngIf="addCorrectFalta">
+                <div class="alert alert-success alert-dismissible fade show" role="alert">
+                    Falta añadida correctamente.
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"
+                        (click)='quit()'></button>
+                </div>
+            </div>
+            <div class="col-sm-12 mt-3" *ngIf="updateCorrectFalta">
+                <div class="alert alert-success alert-dismissible fade show" role="alert">
+                    Falta actualizada correctamente.
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"
+                        (click)='quit()'></button>
+                </div>
+            </div>
+
+            <form class="mt-3" name="faltaForm" #faltaForm="ngForm" (ngSubmit)="addFalta()" novalidate>
+                <div *ngIf="showProfesor" class="form-group">
+                    <label for="hora">Profesor</label>
+                    <select class="form-select" name="hora" [(ngModel)]="newFalta.email" required>
+                        <option disabled>Selecciona un profesor...</option>
+                        <option *ngFor="let user of users" [ngValue]="user.email">{{user.apellido1}} {{user.apellido2}},
+                            {{user.nombre}}</option>
+                    </select>
+
+                </div>
+                <div class="form-group">
+                    <label for="fecha">Fecha</label>
+                    <input type="date" class="form-control" name="fecha" [(ngModel)]="newFalta.fecha" required>
+
+                </div>
+                <div class="form-group">
+                    <label for="hora">Hora</label>
+                    <select class="form-select" name="hora" [(ngModel)]="newFalta.hora" ng-init="newFalta.hora"
+                        required>
+                        <option value="00:00">Todo el día</option>
+                        <option value="8:15">8:15 - 9:10</option>
+                        <option value="9:10">9:10 - 10:05</option>
+                        <option value="10:05">10:05 - 11:00</option>
+                        <option value="11:30">11:30 - 12:25</option>
+                        <option value="12:25">12:25 - 13:20</option>
+                        <option value="13:20">13:20 - 14:15</option>
+                        <option value="14:15">14:15 - 15:10</option>
+                    </select>
+
+                </div>
+                <button type="submit" [disabled]="faltaForm.invalid" class="btn btn-primary mt-3">Añadir</button>
+            </form>
+        </div>
+    </div>
