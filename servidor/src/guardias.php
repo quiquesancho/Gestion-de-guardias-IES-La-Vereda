@@ -2,6 +2,7 @@
 
 header('Access-Control-Allow-Origin: *');
 header("Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept");
+header('Access-Control-Allow-Methods: *');
 
 $method = $_SERVER['REQUEST_METHOD'];
 
@@ -142,7 +143,9 @@ if ($method == 'POST') {
 
             $docente = $stmt->fetch();
 
-            $stmt = $dbh->prepare("insert into registro (fecha, hora, docente_guardia, observaciones) values (:fecha, :hora, :dni, 'Guardia confirmada')");
+            $stmt = $dbh->prepare("insert into registro (fecha, hora, docente_guardia, observaciones) values (:fecha, :hora, :dni, 'Guardia confirmada
+            -----------------------------------------
+            ')");
             $stmt->bindValue(':fecha', $fecha->format('Y-m-d'));
             $stmt->bindValue(':hora', obtenerHoraGuardia());
             $stmt->bindValue(':dni', $docente['dni']);
@@ -219,8 +222,114 @@ if ($method == 'POST') {
         }
     }
 
-    if($action == 'asignarGuardia'){
-        
+    if ($action == 'asignarGuardia') {
+        $email = $params->email;
+        $guardia = $params->guardia;
+
+        $fecha = new DateTime($params->guardia->fecha);
+
+        try {
+            $dbh = ConexionDB::conectar();
+
+            $stmt = $dbh->prepare('select * from docentes where email = :email');
+            $stmt->bindValue(':email', $email);
+            $stmt->setFetchMode(PDO::FETCH_ASSOC);
+            $stmt->execute();
+
+            $dGuardia = $stmt->fetch();
+
+            $stmt = $dbh->prepare('select * from docentes where email = :email');
+            $stmt->bindValue(':email', $guardia->dAusente->email);
+            $stmt->setFetchMode(PDO::FETCH_ASSOC);
+            $stmt->execute();
+
+            $dAusente = $stmt->fetch();
+
+            $stmt = $dbh->prepare('select * from registro where fecha = :fecha and hora = :hora and docente_guardia = :dGuardia');
+            $stmt->bindValue(':fecha', $fecha->format('Y-m-d'));
+            $stmt->bindValue(':hora', $params->guardia->hora);
+            $stmt->bindValue(':dGuardia', $dGuardia['dni']);
+            $stmt->setFetchMode(PDO::FETCH_ASSOC);
+            $stmt->execute();
+
+            if ($stmt->rowCount() == 1) {
+                $stmt = $dbh->prepare('update registro set docente_ausente = :dAusente, grupo = :grupo, aula = :aula where fecha = :fecha and hora = :hora and docente_guardia = :dGuardia');
+                $stmt->bindValue(':dAusente', $dAusente['dni']);
+                $stmt->bindValue(':grupo', $params->guardia->grupo);
+                $stmt->bindValue(':aula', $params->guardia->aula);
+                $stmt->bindValue(':fecha', $fecha->format('Y-m-d'));
+                $stmt->bindValue(':hora', $params->guardia->hora);
+                $stmt->bindValue(':dGuardia', $dGuardia['dni']);
+                $stmt->setFetchMode(PDO::FETCH_ASSOC);
+                $stmt->execute();
+            } else {
+                $stmt = $dbh->prepare("insert into registro(docente_ausente, grupo, aula, fecha, hora, docente_guardia, observaciones) values (:dAusente, :grupo, :aula, :fecha, :hora, :dGuardia,'Guardia confirmada
+                -----------------------------------------
+                ')");
+                $stmt->bindValue(':dAusente', $dAusente['dni']);
+                $stmt->bindValue(':grupo', $params->guardia->grupo);
+                $stmt->bindValue(':aula', $params->guardia->aula);
+                $stmt->bindValue(':fecha', $fecha->format('Y-m-d'));
+                $stmt->bindValue(':hora', $params->guardia->hora);
+                $stmt->bindValue(':dGuardia', $dGuardia['dni']);
+                $stmt->setFetchMode(PDO::FETCH_ASSOC);
+                $stmt->execute();
+            }
+
+            $stmt = $dbh->prepare('select * from docente_ausente where dni_docente = :dni and fecha = :fecha');
+            $stmt->bindValue(':dni', $dAusente['dni']);
+            $stmt->bindValue(':fecha', $fecha->format('Y-m-d'));
+            $stmt->setFetchMode(PDO::FETCH_ASSOC);
+            $stmt->execute();
+
+            $falta = $stmt->fetch();
+
+            if ($falta['hora'] == '00:00:00') {
+                if (obtenerHoraGuardia() == '14:15') {
+                    $stmt = $dbh->prepare("delete from docente_ausente where dni_docente = :dni and fecha = :fecha and hora = '00:00:00'");
+                    $stmt->bindValue(':dni', $dAusente['dni']);
+                    $stmt->bindValue(':fecha', $fecha->format('Y-m-d'));
+                    $stmt->setFetchMode(PDO::FETCH_ASSOC);
+                    $stmt->execute();
+                }
+            } else {
+                $stmt = $dbh->prepare("delete from docente_ausente where dni_docente = :dni and fecha = :fecha and hora = :hora");
+                $stmt->bindValue(':dni', $dAusente['dni']);
+                $stmt->bindValue(':fecha', $fecha->format('Y-m-d'));
+                $stmt->bindValue(':hora', $params->guardia->hora);
+                $stmt->setFetchMode(PDO::FETCH_ASSOC);
+                $stmt->execute();
+            }
+
+
+            echo json_encode(array('codigo' => '1'));
+        } catch (Exception $e) {
+            echo json_encode($e->getMessage());
+        } finally {
+            $dbu = null;
+        }
+    }
+}
+
+if ($method == 'PUT') {
+    $guardia = $params->guardia;
+
+    try {
+        $dbh = ConexionDB::conectar();
+
+        $stmt = $dbh->prepare('update registro set observaciones = :obser where fecha = :fecha and hora = :hora and docente_guardia = :dGuardia');
+        $stmt->bindValue(':obser', $guardia->observacion);
+        $stmt->bindValue(':fecha', $guardia->fecha);
+        $stmt->bindValue(':hora', $guardia->hora);
+        $stmt->bindValue(':dGuardia', $guardia->dGuardia->dni);
+        $stmt->setFetchMode(PDO::FETCH_ASSOC);
+        $stmt->execute();
+
+        echo json_encode(array('codigo' => '1'));
+    } catch (Exception $e) {
+        echo json_encode($e->getMessage());
+    } finally {
+        $dbh = null;
     }
 }
 

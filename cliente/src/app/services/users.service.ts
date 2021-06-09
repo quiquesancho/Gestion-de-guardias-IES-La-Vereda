@@ -58,10 +58,11 @@ export class UsersService {
     )
   }
 
-  comprobarDocenteGurdia(){
-    return this.httpClient.get(this.URL + '/docentes').pipe(
+  obtenerDocenteGurdia(){
+    return this.httpClient.get<User[]>(this.URL + '/docentes').pipe(
       map(response =>{
         console.log(response);
+        return response;
       })
     )
   }

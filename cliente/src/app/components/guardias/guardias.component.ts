@@ -1,7 +1,9 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { Guardia } from 'src/app/interfaces/guardia';
 import { User } from 'src/app/interfaces/user';
 import { GuardiasService } from 'src/app/services/guardias.service';
+import { UsersService } from 'src/app/services/users.service';
 
 @Component({
   selector: 'app-guardias',
@@ -16,8 +18,10 @@ export class GuardiasComponent implements OnInit {
   guardias: Guardia[] = [];
   users: User[];
   guardia: Guardia;
+  updated: number;
+  emailAsignar: string;
 
-  constructor(private guardiasService: GuardiasService) { }
+  constructor(private guardiasService: GuardiasService, private usersService: UsersService) { }
 
   ngOnInit(): void {
     if (localStorage.getItem('check') == 'si' || localStorage.getItem('role') == 'admin') {
@@ -25,17 +29,22 @@ export class GuardiasComponent implements OnInit {
         this.isAdmin = true;
       } else {
         this.isAdmin = false;
-        this.tieneGuardia();
       }
       this.isChecked = true;
+      this.tieneGuardia();
     }
     this.getGuaridias();
+    this.obtenerUsuariosGuardia();
   }
 
   getGuaridias(){
     this.guardiasService.getGuaridas().subscribe(response => {
       this.guardias = response;
     })
+  }
+
+  obtenerUsuariosGuardia(){
+    this.usersService.obtenerDocenteGurdia().subscribe(response => this.users = response)
   }
 
   tieneGuardia(){
@@ -51,11 +60,27 @@ export class GuardiasComponent implements OnInit {
   }
 
   asignarGuardia(guardia){
-    console.log(guardia);
+    let email;
+    if(localStorage.getItem('role') == 'admin'){
+      email = this.emailAsignar
+    } else {
+      email = localStorage.getItem('mail');
+    }
+    this.guardiasService.asignarGuardia(guardia,email).subscribe(data => {
+      if(data['codigo'] == 1){
+        location.reload();
+      } else {
+        console.log(data);
+      }
+    })
   }
 
-  updateObservaciones(){
-    console.log(this.guardia.observacion);
+  updateObservaciones(guardia){
+    this.guardiasService.updateObservaciones(guardia).subscribe(data =>{
+      if(data['codigo'] == '1'){
+        this.updated = 1;
+      }
+    });
   }
 
   confirmarGuardia(){
@@ -63,10 +88,15 @@ export class GuardiasComponent implements OnInit {
       if(response['codigo'] == 1){
         this.isChecked = true;
         localStorage.setItem('check','si');
+        location.reload();
       } else {
         console.log(response)
       }
     });
+  }
+
+  quit(){
+    this.updated = 0;
   }
 
 }

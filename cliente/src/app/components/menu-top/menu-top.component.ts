@@ -22,7 +22,8 @@ export class MenuTopComponent implements OnInit {
     if(this.userService.isLoggedIn()){
       this.loginbtn = false;
       this.logoutbtn = true;
-
+      this.comprobarRol();
+      this.nombreDocente = localStorage.getItem('token');
     } else {
       this.loginbtn = true;
       this.logoutbtn = false;

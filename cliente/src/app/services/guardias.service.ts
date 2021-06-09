@@ -38,4 +38,21 @@ export class GuardiasService {
       }))
     )
   }
+
+  asignarGuardia(guardia: Guardia, email: string){
+    const action = 'asignarGuardia';
+    return this.httpClient.post(this.URL+'/guardias',{action, email, guardia}).pipe(
+      map((response => {
+        return response;
+      }))
+    )
+  }
+
+  updateObservaciones(guardia: Guardia) {
+    return this.httpClient.put(this.URL+'/guardias', {guardia}).pipe(
+      map((response => {
+        return response;
+      }))
+    )
+  }
 }

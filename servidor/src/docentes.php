@@ -10,66 +10,39 @@ $method = $_SERVER['REQUEST_METHOD'];
 if ($method == 'GET') {
     try {
         $fecha = new DateTime('now');
+        $dia = obtenerDiaSemana();
+        $hora = obtenerHoraGuardia();
+        $dGuardia = array();
 
         $dbh = ConexionDB::conectar();
 
-        $stmt = $dbh->prepare("select * from registro where fecha = :dia and hora = :hora and docente_ausente is not null");
-        $stmt->bindValue(':dia', $fecha->format('Y-m-d'));
-        $stmt->bindValue(':hora', '14:15');
+        $stmt = $dbh->prepare("select * from horariodocente where dia_semana = :dia and desde = :desde and ocupacion = '3249454'");
+        $stmt->bindValue(':dia', $dia);
+        $stmt->bindValue(':desde', $hora);
         $stmt->setFetchMode(PDO::FETCH_ASSOC);
         $stmt->execute();
-        $registro = $stmt->fetchAll();
 
-        echo json_encode($registro);
+        $docentes = $stmt->fetchAll();
 
-        
+        foreach ($docentes as $docente) {
+            $stmt = $dbh->prepare("select * from registro where fecha = :fecha and hora = :hora and docente_guardia = :dni and docente_ausente is not null");
+            $stmt->bindValue(':fecha', $fecha->format('Y-m-d'));
+            $stmt->bindValue(':hora', $hora);
+            $stmt->bindValue(':dni', $docente['dni_docente']);
+            $stmt->setFetchMode(PDO::FETCH_ASSOC);
+            $stmt->execute();
 
-        // $stmt = $dbh->prepare("select * from docente_guardia");
-        // $stmt->setFetchMode(PDO::FETCH_ASSOC);
-        // $stmt->execute();
+            if($stmt->rowCount() != 1){
+                $stmt = $dbh->prepare("select * from docentes where dni = :dni");
+                $stmt->bindValue(':dni',$docente['dni_docente']);
+                $stmt->setFetchMode(PDO::FETCH_ASSOC);
+                $stmt->execute();
+                $d = $stmt->fetch();
+                array_push($dGuardia, $d);
+            }
+        }
 
-        // $numDoGuardia = $stmt->rowCount();
-
-        // $desde = obtenerHoraGuardia();
-        // $dia = obtenerDiaSemana();
-
-        // $stmt = $dbh->prepare("select * from horariodocente where dia_semana = :dia and desde = :desde and ocupacion = '3249454'");
-        // $stmt->bindValue(':dia', $dia);
-        // $stmt->bindValue(':desde', $desde);
-        // $stmt->setFetchMode(PDO::FETCH_ASSOC);
-        // $stmt->execute();
-
-        // $docentes = $stmt->fetchAll();
-
-        // if ($numDoGuardia == 0) {
-
-        //     foreach ($docentes as $docente) {
-        //         $stmt = $dbh->prepare("insert into docente_guardia values(:dni, 0)");
-        //         $stmt->bindValue(':dni', $docente['dni_docente']);
-        //         $stmt->setFetchMode(PDO::FETCH_ASSOC);
-        //         $stmt->execute();
-        //     }
-
-        //     echo json_encode(array('codigo' => 1));
-        // } else {
-
-        //     if (count($docentes) != $numDoGuardia) {
-        //         $stmt = $dbh->prepare("delete from docente_guardia");
-        //         $stmt->setFetchMode(PDO::FETCH_ASSOC);
-        //         $stmt->execute();
-
-        //         foreach ($docentes as $docente) {
-        //             $stmt = $dbh->prepare("insert into docente_guardia values(:dni, 0)");
-        //             $stmt->bindValue(':dni', $docente['dni_docente']);
-        //             $stmt->setFetchMode(PDO::FETCH_ASSOC);
-        //             $stmt->execute();
-        //         }
-
-        //         echo json_encode(array('codigo' => 2));
-        //     } else {
-        //         echo json_encode(array('codigo' => 0));
-        //     }
-        // }
+        echo json_encode($dGuardia);
     } catch (Exception $e) {
         echo json_encode($e->getMessage());
     } finally {

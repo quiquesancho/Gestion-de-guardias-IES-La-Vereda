@@ -1,10 +1,7 @@
 <div class="container-fluid">
   <div class="row" *ngIf="isChecked; else noChecked">
     <div *ngIf="haveGuardia == 0">
-      <div
-        class="col-md-8 mt-3 mx-auto"
-        *ngIf="guardias.length; else noGuardias"
-      >
+      <div class="col-md-8 mt-3 mx-auto" *ngIf="guardias.length; else noGuardias">
         <div class="col-md-6 mt-3 mx-auto text-center">
           <h3>Guardias</h3>
         </div>
@@ -27,25 +24,22 @@
               <td>{{ guardia.aula }}</td>
               <td>{{ guardia.grupo }}</td>
               <td *ngIf="isAdmin">
-                <select name="" id="">
-                  <option value="prueba@prueba.com" selected>
-                    Enrique Sancho Caballer
+                <select *ngIf="guardia.dGuardia === undefined; else siDGuardia" [(ngModel)]="emailAsignar" name="" id="">
+                  <option *ngFor="let user of users" [ngValue]="user.email">
+                    {{user.nombre}} {{user.apellido1}} {{user.apellido2}}
                   </option>
                 </select>
-              </td>
-              <td>
-                <button
-                  class="btn btn-secondary"
-                  *ngIf="guardia.dGuardia === undefined; else siDGuardia"
-                  (click)="asignarGuardia(guardia)"
-                >
-                  Asignar guardia
-                </button>
                 <ng-template #siDGuardia>
                   {{ guardia.dGuardia.nombre }}
                   {{ guardia.dGuardia.apellido1 }}
                   {{ guardia.dGuardia.apellido2 }}
                 </ng-template>
+              </td>
+              <td>
+                <button class="btn btn-secondary" *ngIf="guardia.dGuardia === undefined"
+                  (click)="asignarGuardia(guardia)">
+                  Asignar guardia
+                </button> 
               </td>
             </tr>
           </tbody>
@@ -86,10 +80,19 @@
         </div>
       </div>
       <div class="col-md-6 mx-auto">
+        <div class="col-sm-12 mt-3" *ngIf="updated == 1">
+          <div class="alert alert-success alert-dismissible fade show" role="alert">
+            Observaciones actualizadas correctamente.
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"
+              (click)='quit()'></button>
+          </div>
+        </div>
         <label for="exampleTextarea" class="form-label mt-4">Observaciones</label>
-        <textarea class="form-control" [(ngModel)]="guardia.observacion" name="" id="observaciones" cols="30" rows="10"></textarea>
+        <textarea class="form-control" [(ngModel)]="guardia.observacion" name="" id="observaciones" cols="30"
+          rows="10"></textarea>
         <div>
-          <button class="btn btn-secondary mt-3" (click)="updateObservaciones()">Actualizar observaciones</button>
+          <button class="btn btn-secondary mt-3" (click)="updateObservaciones(guardia)">Actualizar
+            observaciones</button>
         </div>
       </div>
     </div>
@@ -112,11 +115,7 @@
                 Confirmar la asistencia a la sesión de guardia
               </label>
             </div>
-            <button
-              type="submit"
-              class="btn btn-primary"
-              (click)="confirmarGuardia()"
-            >
+            <button type="submit" class="btn btn-primary" (click)="confirmarGuardia()">
               Confirmar
             </button>
           </form>
