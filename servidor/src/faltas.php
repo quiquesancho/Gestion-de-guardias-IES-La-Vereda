@@ -189,7 +189,7 @@ if ($method == 'add') {
 
                 $dni = $stmt->fetchAll();
 
-                $stmt = $dbh->prepare("select * from docente_ausente where dni_docente = :dni and fecha = :fecha and hora = :hora");
+                $stmt = $dbh->prepare("select * from docente_ausente where dni_docente = :dni and fecha = :fecha and (hora = :hora or hora = '00:00')");
                 $stmt->bindValue(':dni', $dni[0]['dni']);
                 $stmt->bindValue(':fecha', $fecha);
                 $stmt->bindValue(':hora', $hora);
